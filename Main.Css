@@ -10,6 +10,7 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
+    overflow-x: hidden; /* Prevents horizontal scroll on mobile */
 }
 
 /* Container */
@@ -35,11 +36,12 @@ nav h1 {
 nav ul {
     list-style: none;
     float: right;
+    display: flex; /* Updated for better mobile alignment */
+    gap: 20px; /* Use gap for spacing between list items */
 }
 
 nav ul li {
-    display: inline;
-    margin-left: 20px;
+    margin-left: 0; /* Reset margin since gap is used */
 }
 
 nav ul li a {
@@ -61,6 +63,7 @@ nav ul li a:hover {
     align-items: center;
     color: #fff;
     text-align: center;
+    padding: 0 20px; /* Added padding for mobile responsiveness */
 }
 
 .hero h2 {
@@ -122,6 +125,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px; /* Use gap instead of margin for consistent spacing */
 }
 
 .skill {
@@ -222,7 +226,8 @@ nav ul li a:hover {
     font-size: 1.1rem;
 }
 
-.contact input, .contact textarea {
+.contact input,
+.contact textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -274,4 +279,30 @@ nav ul li a:hover {
     max-width: 600px;
     height: 400px;
     border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        float: none;
+        flex-direction: column; /* Stack navigation vertically on mobile */
+        align-items: center;
+    }
+
+    .hero {
+        height: auto; /* Allow hero to adjust height on smaller screens */
+        padding: 50px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .project {
+        padding: 15px;
+    }
 }
