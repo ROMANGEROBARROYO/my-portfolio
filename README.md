@@ -37,4 +37,3 @@ Feel free to reach out to me for collaborations or project inquiries:
 
 - 📧 **Email**: [geroarrroyo2233@gmail.com](mailto:geroarrroyo2233@gmail.com)
 - 📱 **Phone**: 09665346667
--
