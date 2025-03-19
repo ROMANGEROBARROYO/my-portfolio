@@ -13,10 +13,7 @@ Hi, my name is **Romangero B. Arroyo**. I am a second-year IT student from STI A
 This is my first attempt at building a portfolio website using HTML and CSS. It showcases my projects, skills, and more.
 
 ### [E-commerce Website](https://github.com/yourusername/ecommerce)
-An e-commerce web application built using modern web technologies, including JavaScript and React. This project demonstrates the integration of payment gateways and a dynamic product catalog.
-
-### [Task Manager](https://github.com/yourusername/task-manager)
-A task manager application built with Node.js and Express.js, aimed at helping users manage their tasks efficiently.
+An e-commerce web application built using modern web technologies, including JavaScript  This project demonstrates the integration of payment gateways and a dynamic product catalog.
 
 ---
 
