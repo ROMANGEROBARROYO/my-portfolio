@@ -1,38 +1,39 @@
 # My Portfolio
 
-This is my personal portfolio website showcasing my projects, skills, and contact information. Built using HTML, CSS, and JavaScript.
+Welcome to my personal portfolio website! This project showcases my work, skills, and experience as a second-year IT student at STI Alaminos, Pangasinan.
 
-## Features
-- **Responsive Design**: Works on all devices.
-- **Dark Mode**: Toggle between light and dark themes.
-- **Portfolio Showcase**: Displays my projects with descriptions.
-- **Contact Form**: Users can send messages directly.
+## 🚀 Features
+- Responsive design for all devices
+- Portfolio section showcasing projects
+- Contact form for inquiries
+- Dark mode toggle
 
-## Technologies Used
-- HTML5
-- CSS3
-- JavaScript
+## 🛠 Technologies Used
+- **HTML** - Structuring the web pages
+- **CSS** - Styling and layout
+- **JavaScript** - Interactive features
 
-## Installation & Setup
+## 📂 Project Structure
+```
+📁 my-portfolio
+│── 📄 index.html      # Main HTML file
+│── 📄 styles.css      # Stylesheet for design
+│── 📄 script.js       # JavaScript for interactivity
+│── 📂 assets          # Images and media files
+│── 📄 README.md       # Project documentation
+```
+
+## 📌 Setup Instructions
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/portfolio.git
+   git clone https://github.com/yourusername/my-portfolio.git
    ```
-2. Navigate to the project folder:
-   ```sh
-   cd portfolio
-   ```
-3. Open `index.html` in your browser.
+2. Open the project folder and launch `index.html` in a browser.
 
-## Usage
-- Click on the navigation links to explore different sections.
-- View my projects in the portfolio section.
-- Use the contact form to send me a message.
+## 📞 Contact
+- **Name:** Roman Gero Arrotyo
+- **Email:** [geroarroyo2233@email.com](mailto:geroarroyo2233@email.com)
+- **LinkedIn:** [Your LinkedIn Profile](#)
 
-## Contact
-- **Email**: geroarroyo2233@email.com
-- **Phone**: +63 966-5346-667
-- **Social Media**: [Facebook](#) | [Twitter](#) | [LinkedIn](#)
-
-## License
-This project is open-source and free to use.
+## 📜 License
+This project is open-source and available under the [MIT License](LICENSE).
