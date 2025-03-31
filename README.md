@@ -8,12 +8,10 @@ Feel free to explore my work, connect with me, and learn more about my journey i
 
 ## 🚀 Features  
 
-- 🌍 **Fully Responsive Design** – Optimized for desktops, tablets, and mobile devices.  
 - 💼 **Portfolio Showcase** – Displays my best projects with descriptions and images.  
 - 📬 **Contact Form** – Allows visitors to send inquiries directly from the website.  
 - 🌙 **Dark Mode Toggle** – Users can switch between light and dark themes for better accessibility.  
-- ⚡ **Interactive Navigation** – Smooth scrolling and easy-to-use menu links.  
-- 🔗 **Social Media Integration** – Links to my social profiles for networking.  
+- ⚡ **Interactive Navigation** – Smooth scrolling and easy-to-use menu links.    
 
 
 ## 🛠 Technologies Used  
