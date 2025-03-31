@@ -1,30 +1,38 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #f4f4f4, #ddd);
-  color: #333;
-  transition: background 0.5s ease, color 0.5s ease;
+  background: linear-gradient(135deg, #ffffff, #e6e6e6);
+  color: #222;
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+  line-height: 1.6;
 }
 
+
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  width: 90%;
+  box-sizing: border-box;
 }
+
 
 /* Dark Mode Styles */
 body.dark-mode {
-  background: radial-gradient(circle, #1a1a1a, #121212);
-  color: #ddd;
+  background: radial-gradient(circle, #1a1a1a, #0d0d0d);
+  color: #e0e0e0;
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
 }
+
 
 /* Header */
 header {
-  background: linear-gradient(90deg, #333, #444);
-  padding: 15px 0;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(90deg, #2c2c2c, #3b3b3b);
+  padding: 20px 0;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
 }
 
 body.dark-mode header {
