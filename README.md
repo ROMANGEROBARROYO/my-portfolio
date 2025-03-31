@@ -1,17 +1,30 @@
-# My Portfolio
+# Roman Gero Arrotyo - Portfolio  
 
-Welcome to my personal portfolio website! This project showcases my work, skills, and experience as a second-year IT student at STI Alaminos, Pangasinan.
+Welcome to my personal portfolio website! 🎨🚀  
+This project highlights my skills, projects, and experience as a **second-year IT student** at **STI Alaminos, Pangasinan**. It serves as a platform to showcase my passion for **web development, software solutions, and innovative technology**.  
 
-## 🚀 Features
-- Responsive design for all devices
-- Portfolio section showcasing projects
-- Contact form for inquiries
-- Dark mode toggle
+Feel free to explore my work, connect with me, and learn more about my journey in the world of **Information Technology**!  
 
-## 🛠 Technologies Used
-- **HTML** - Structuring the web pages
-- **CSS** - Styling and layout
-- **JavaScript** - Interactive features
+
+## 🚀 Features  
+
+- 🌍 **Fully Responsive Design** – Optimized for desktops, tablets, and mobile devices.  
+- 💼 **Portfolio Showcase** – Displays my best projects with descriptions and images.  
+- 📬 **Contact Form** – Allows visitors to send inquiries directly from the website.  
+- 🌙 **Dark Mode Toggle** – Users can switch between light and dark themes for better accessibility.  
+- ⚡ **Interactive Navigation** – Smooth scrolling and easy-to-use menu links.  
+- 🔗 **Social Media Integration** – Links to my social profiles for networking.  
+
+
+## 🛠 Technologies Used  
+
+- **HTML5** 🏗️ – Provides the structure and foundation of the website.  
+- **CSS3** 🎨 – Enhances design, layout, and responsiveness for a better user experience.  
+- **JavaScript (JS)** ⚡ – Adds interactivity and dynamic features.  
+- **Flexbox & Grid** 📏 – Used for modern, responsive layouts.  
+- **Dark Mode Toggle** 🌙 – JavaScript-powered theme switcher for a better UI experience.  
+- **Form Validation** ✅ – Ensures user input accuracy in the contact form.  
+
 
 ## 📂 Project Structure
 ```
@@ -30,10 +43,11 @@ Welcome to my personal portfolio website! This project showcases my work, skills
    ```
 2. Open the project folder and launch `index.html` in a browser.
 
-## 📞 Contact
-- **Name:** Roman Gero Arrotyo
-- **Email:** [geroarroyo2233@email.com](mailto:geroarroyo2233@email.com)
-- **LinkedIn:** [Your LinkedIn Profile](#)
+## 📞 Contact  
+Feel free to reach out for collaboration, inquiries, or just to say hello!  
 
-## 📜 License
-This project is open-source and available under the [MIT License](LICENSE).
+- **👤 Name:** Roman Gero Arrotyo  
+- **📧 Email:** [geroarroyo2233@email.com](mailto:geroarroyo2233@email.com)  
+- **💼 LinkedIn:** [Connect with me](#)  
+- **🌐 Portfolio:** [My Website](#)  
+
