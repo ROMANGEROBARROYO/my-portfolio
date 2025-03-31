@@ -1,171 +1,133 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roman Gero Arroyo's Portfolio</title>
-    <link rel="stylesheet" href="Main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-    <!-- Navigation -->
+<!-- Header Section -->
+<header style="background-color: #333; padding: 20px 0;">
+  <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+    <h1 class="logo" style="color: #fff; margin: 0;">My Portfolio</h1>
     <nav>
-        <div class="container">
-            <h1>Roman Gero Arroyo</h1>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 20px;">
+        <li><a href="#about" style="color: #fff; text-decoration: none;">About Me</a></li>
+        <li><a href="#portfolio" style="color: #fff; text-decoration: none;">Portfolio</a></li>
+        <li><a href="#contact" style="color: #fff; text-decoration: none;">Contact</a></li>
+      </ul>
     </nav>
+  </div>
+</header>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="container">
-            <h2>Hello, I'm <span>Roman Gero B. Arroyo</span></h2>
-            <p>Editor | Content Creator | Programmer</p>
-            <a href="#projects" class="btn">View my Projects</a>
+<!-- About Me Section -->
+<section id="about" class="section" style="padding: 50px 0; background-color: #f4f4f4;">
+  <div class="container" style="max-width: 800px; margin: 0 auto; text-align: center;">
+    <h2 style="font-size: 2.5em; color: #333;">About Me</h2>
+    <p style="color: #666; font-size: 1.2em; line-height: 1.6; margin-top: 20px;">
+      Hello, I'm a passionate web developer with a love for creating beautiful and functional websites.
+      I specialize in front-end development, using HTML, CSS, and JavaScript to bring designs to life.
+    </p>
+  </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="section" style="padding: 50px 0; background-color: #fff;">
+  <div class="container" style="max-width: 1000px; margin: 0 auto; text-align: center;">
+    <h2 style="font-size: 2.5em; color: #333;">My Work</h2>
+    <div class="portfolio-items" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; margin-top: 40px;">
+      <div class="portfolio-item" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <img src="https://via.placeholder.com/300x200" alt="Project 1" style="width: 100%; height: auto;">
+        <div style="padding: 20px;">
+          <h3 style="font-size: 1.5em; color: #333;">Project 1</h3>
+          <p style="color: #666;">A description of project 1.</p>
         </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                Hi, my name is Roman Gero B. Arroyo, and I am currently a second-year IT student at STI Alaminos City, Pangasinan.
-                I am passionate about software development, content creation, and everything technology-related. My journey into
-                tech started when I was fascinated by how websites and apps work, which eventually led me to programming.
-            </p>
-            <p>
-                In addition to my academic pursuits, I enjoy creating content on YouTube, where I cover tech tutorials and
-                programming challenges. In my free time, I love exploring new software tools, reading tech blogs, and contributing
-                to open-source projects. I believe in continuous learning and always seek opportunities to improve and grow.
-            </p>
-            <p>Feel free to explore my portfolio, and let’s connect if you’d like to collaborate on a project!</p>
+      </div>
+      
+      <div class="portfolio-item" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <img src="https://via.placeholder.com/300x200" alt="Project 2" style="width: 100%; height: auto;">
+        <div style="padding: 20px;">
+          <h3 style="font-size: 1.5em; color: #333;">Project 2</h3>
+          <p style="color: #666;">A description of project 2.</p>
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skill-list">
-                <div class="skill">
-                    <i class="fab fa-html5"></i>
-                    <p>HTML5</p>
-                </div>
-                <div class="skill">
-                    <i class="fab fa-css3-alt"></i>
-                    <p>CSS3</p>
-                </div>
-                <div class="skill">
-                    <i class="fab fa-js"></i>
-                    <p>JavaScript</p>
-                </div>
-                <div class="skill">
-                    <i class="fab fa-react"></i>
-                    <p>React</p>
-                </div>
-                <div class="skill">
-                    <i class="fab fa-node-js"></i>
-                    <p>Node.js</p>
-                </div>
-                <div class="skill">
-                    <i class="fas fa-database"></i>
-                    <p>SQL & NoSQL</p>
-                </div>
-                <div class="skill">
-                    <i class="fab fa-git-alt"></i>
-                    <p>Git & GitHub</p>
-                </div>
-            </div>
+      </div>
+      
+      <div class="portfolio-item" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <img src="https://via.placeholder.com/300x200" alt="Project 3" style="width: 100%; height: auto;">
+        <div style="padding: 20px;">
+          <h3 style="font-size: 1.5em; color: #333;">Project 3</h3>
+          <p style="color: #666;">A description of project 3.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Projects</h2>
+  <!-- Contact Section -->
+  
+  
+ <!-- Contact Section -->
+<section id="contact" class="section" style="background-color: #f9f9f9; padding: 50px 0;">
+  <div class="container" style="max-width: 800px; margin: 0 auto;">
+    <h2 style="text-align: center; color: #333; font-size: 2.5em;">Contact Me</h2>
+    <p style="text-align: center; color: #666; margin-bottom: 40px;">
+      If you'd like to work together or have any questions, feel free to get in touch!
+    </p>
+    
+    <form action="#" method="POST" class="contact-form" style="display: flex; flex-direction: column; gap: 20px;">
+      <div class="form-group" style="display: flex; flex-direction: column;">
+        <label for="name" style="color: #333; margin-bottom: 5px;">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required
+               style="padding: 10px; border: 1px solid #ddd; border-radius: 5px; font-size: 1em;">
+      </div>
 
-            <div class="project">
-                <h3>Portfolio Website</h3>
-                <p>This is the project you are currently viewing. It showcases my work, skills, and contact information.</p>
-                <ul>
-                    <li><strong>Technologies Used:</strong> HTML5, CSS3, JavaScript</li>
-                </ul>
-                <a href="https://github.com/yourusername/portfolio" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-            </div>
+      <div class="form-group" style="display: flex; flex-direction: column;">
+        <label for="email" style="color: #333; margin-bottom: 5px;">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required
+               style="padding: 10px; border: 1px solid #ddd; border-radius: 5px; font-size: 1em;">
+      </div>
 
-            <div class="project">
-                <h3>eCommerce Website</h3>
-                <p>An eCommerce platform developed using modern web technologies with features such as user authentication, shopping cart, and product reviews.</p>
-                <ul>
-                    <li><strong>Technologies Used:</strong> React, Node.js, Express, MongoDB</li>
-                    <li><strong>Key Features:</strong> Responsive design, shopping cart functionality, and admin panel</li>
-                </ul>
-                <a href="https://github.com/yourusername/ecommerce" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-            </div>
+      <div class="form-group" style="display: flex; flex-direction: column;">
+        <label for="phone" style="color: #333; margin-bottom: 5px;">Your Phone (optional)</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"
+               style="padding: 10px; border: 1px solid #ddd; border-radius: 5px; font-size: 1em;">
+      </div>
 
-            <div class="project">
-                <h3>Task Manager Application</h3>
-                <p>A web-based task manager app to organize tasks efficiently. Users can add, edit, delete, and track tasks in real-time.</p>
-                <ul>
-                    <li><strong>Technologies Used:</strong> React, Node.js, SQLite</li>
-                    <li><strong>Key Features:</strong> Real-time updates, simple and intuitive UI</li>
-                </ul>
-                <a href="https://github.com/yourusername/task-manager" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-            </div>
+      <div class="form-group" style="display: flex; flex-direction: column;">
+        <label for="subject" style="color: #333; margin-bottom: 5px;">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Enter the subject" required
+               style="padding: 10px; border: 1px solid #ddd; border-radius: 5px; font-size: 1em;">
+      </div>
 
-        </div>
-    </section>
+      <div class="form-group" style="display: flex; flex-direction: column;">
+        <label for="message" style="color: #333; margin-bottom: 5px;">Your Message</label>
+        <textarea id="message" name="message" placeholder="Write your message here" required
+                  style="padding: 10px; border: 1px solid #ddd; border-radius: 5px; font-size: 1em; height: 150px;"></textarea>
+      </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
+      <button type="submit" style="padding: 15px; background-color: #333; color: #fff; font-size: 1em; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
+        Send Message
+      </button>
+    </form>
+  </div>
+</section>
 
-            <p>If you'd like to get in touch, feel free to fill out the form below or reach me through social media!</p>
 
-            <form action="mailto:geroarroyo2233@gmail.com" method="post" enctype="text/plain">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+<!-- Footer Section -->
+<footer style="background-color: #333; color: #fff; padding: 20px 0;">
+  <div class="container" style="text-align: center;">
+    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    <p>
+      <a href="#" style="color: #fff; margin: 0 10px;">Facebook</a> |
+      <a href="#" style="color: #fff; margin: 0 10px;">Twitter</a> |
+      <a href="#" style="color: #fff; margin: 0 10px;">LinkedIn</a>
+    </p>
+  </div>
+</footer>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
-
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-
-            <!-- Social Media Links -->
-            <div class="social-media">
-                <h3>Connect with me:</h3>
-                <a href="https://github.com/yourusername" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                <a href="https://twitter.com/yourusername" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
-            </div>
-
-            <!-- Google Maps Embed (Replace with your location) -->
-            <div class="map">
-                <h3>My Location:</h3>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093646!2d144.9556518156836!3d-37.81732797975161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5779ef4f67c6c7c!2sMelbourne%20City%2C%20Victoria%2C%20Australia!5e0!3m2!1sen!2sus!4v1631692169071!5m2!1sen!2sus"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-    </section>
-
-    <script src="js/script.js"></script>
 </body>
-
 </html>
-
