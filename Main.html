@@ -5,98 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>My Portfolio | Roman Gero Arrotyo</title>
-   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
 <body>
 
-<!-- Header Section -->
-<header style="background-color: #333; padding: 20px 0;">
-  <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-    <h1 class="logo" style="color: #fff; margin: 0;">My Portfolio</h1>
+<header>
+  <div class="container">
+    <h1 class="logo">My Portfolio</h1>
     <nav>
-      <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 20px;">
-        <li><a href="#about" style="color: #fff; text-decoration: none;">About Me</a></li>
-        <li><a href="#portfolio" style="color: #fff; text-decoration: none;">Portfolio</a></li>
-        <li><a href="#contact" style="color: #fff; text-decoration: none;">Contact</a></li>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<!-- About Me Section -->
-<section id="about" class="section" style="padding: 60px 0; background-color: #f4f4f4;">
-  <div class="container" style="max-width: 800px; margin: 0 auto; text-align: center;">
-    <h2 style="font-size: 2.8em; color: #333; margin-bottom: 20px;">About Me</h2>
-    <p style="color: #555; font-size: 1.3em; line-height: 1.8; margin-top: 10px;">
-      Hello, I'm <strong style="color: #222;">Roman Gero Arrotyo</strong> from 
-      <strong style="color: #222;">STI Alaminos, Alaminos City, Pangasinan</strong>.  
-      I’m a <strong>second-year IT student</strong> with a passion for web development and software solutions.  
-      This portfolio showcases my projects, skills, and experiences.  
-    </p>
+<section id="about" class="section">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>I'm <strong>Roman Gero Arrotyo</strong>, a second-year IT student at STI Alaminos, Pangasinan. Passionate about coding and web development.</p>
   </div>
 </section>
 
-
-<!-- Portfolio Section -->
-<section id="portfolio" class="section" style="padding: 60px 0; background-color: #fff;">
-  <div class="container" style="max-width: 1100px; margin: 0 auto; text-align: center;">
-    <h2 style="font-size: 2.8em; color: #333; margin-bottom: 20px;">My Work</h2>
-    <p style="color: #666; font-size: 1.2em; max-width: 800px; margin: 0 auto 40px;">
-      Here are some of my latest projects showcasing my skills in web development.
-    </p>
-    <div class="portfolio-items" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
-      
-      <div class="portfolio-item" style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: 0.3s;">
-        <img src="https://via.placeholder.com/300x200" alt="Project 1" style="width: 100%; height: auto;">
-        <div style="padding: 20px;">
-          <h3 style="font-size: 1.5em; color: #333;">Project 1</h3>
-          <p style="color: #666;">A description of project 1.</p>
-        </div>
-      </div>
-
-      <div class="portfolio-item" style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: 0.3s;">
-        <img src="https://via.placeholder.com/300x200" alt="Project 2" style="width: 100%; height: auto;">
-        <div style="padding: 20px;">
-          <h3 style="font-size: 1.5em; color: #333;">Project 2</h3>
-          <p style="color: #666;">A description of project 2.</p>
-        </div>
-      </div>
-
-      <div class="portfolio-item" style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: 0.3s;">
-        <img src="https://via.placeholder.com/300x200" alt="Project 3" style="width: 100%; height: auto;">
-        <div style="padding: 20px;">
-          <h3 style="font-size: 1.5em; color: #333;">Project 3</h3>
-          <p style="color: #666;">A description of project 3.</p>
-        </div>
-      </div>
-
-      <div class="portfolio-item" style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: 0.3s;">
-        <img src="https://via.placeholder.com/300x200" alt="Project 4" style="width: 100%; height: auto;">
-        <div style="padding: 20px;">
-          <h3 style="font-size: 1.5em; color: #333;">Project 4</h3>
-          <p style="color: #666;">A description of project 4.</p>
-        </div>
-      </div>
-
-      <div class="portfolio-item" style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: 0.3s;">
-        <img src="https://via.placeholder.com/300x200" alt="Project 5" style="width: 100%; height: auto;">
-        <div style="padding: 20px;">
-          <h3 style="font-size: 1.5em; color: #333;">Project 5</h3>
-          <p style="color: #666;">A description of project 5.</p>
-        </div>
-      </div>
-
+<section id="portfolio" class="section">
+  <div class="container">
+    <h2>My Work</h2>
+    <div class="portfolio-items">
+      <div class="portfolio-item"><img src="https://via.placeholder.com/300x200" alt="Project 1"><h3>Project 1</h3></div>
+      <div class="portfolio-item"><img src="https://via.placeholder.com/300x200" alt="Project 2"><h3>Project 2</h3></div>
+      <div class="portfolio-item"><img src="https://via.placeholder.com/300x200" alt="Project 3"><h3>Project 3</h3></div>
+      <div class="portfolio-item"><img src="https://via.placeholder.com/300x200" alt="Project 4"><h3>Project 4</h3></div>
+      <div class="portfolio-item"><img src="https://via.placeholder.com/300x200" alt="Project 5"><h3>Project 5</h3></div>
+      <div class="portfolio-item"><img src="https://via.placeholder.com/300x200" alt="Project 6"><h3>Project 6</h3></div>
     </div>
   </div>
 </section>
 
-
-
-  <!-- Contact Section -->
-  
-  
- <!-- Contact Section -->
+<!-- Contact Section -->
 <section id="contact" class="section" style="background-color: #f9f9f9; padding: 50px 0;">
   <div class="container" style="max-width: 800px; margin: 0 auto;">
     <h2 style="text-align: center; color: #333; font-size: 2.5em;">Contact Me</h2>
