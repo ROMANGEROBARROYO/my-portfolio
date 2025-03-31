@@ -5,58 +5,137 @@ body {
   padding: 0;
   background-color: #f9f9f9;
   color: #333;
-  transition: background 0.3s ease-in-out;
+  line-height: 1.6;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  scroll-behavior: smooth;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #fff;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Adjust links for better visibility */
+.dark-mode a {
+  color: #1e90ff;
+}
+
+.dark-mode a:hover {
+  color: #63b3ed;
+}
+
+/* Modify buttons for better contrast */
+.dark-mode button {
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+}
+
+.dark-mode button:hover {
+  background-color: #63b3ed;
+}
+
+/* Form elements in dark mode */
+.dark-mode input, 
+.dark-mode textarea {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.dark-mode input::placeholder,
+.dark-mode textarea::placeholder {
+  color: #bbb;
 }
 
 .container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 5%;
+  box-sizing: border-box;
 }
 
 /* Header */
 header {
-  background-color: #333;
-  padding: 20px 0;
+  background: rgba(51, 51, 51, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 15px 0;
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 1000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  min-height: 60px;
 }
 
 .logo {
-  font-size: 1.8em;
+  font-size: clamp(1.5em, 3vw, 2.2em);
   font-weight: bold;
+  color: #f8b400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 25px;
+  padding: 10px 0;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 nav ul li a {
-  color: #fff;
   text-decoration: none;
-  transition: color 0.3s;
+  color: #fff;
+  font-size: 1.1em;
+  transition: color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-  color: #f4b400;
+  color: #f8b400;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
 }
 
 /* About Section */
 #about {
   background-color: #f4f4f4;
-  padding: 60px 0;
+  padding: 80px 20px;
   text-align: center;
+}
+
+#about h2 {
+  font-size: 2.8em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  line-height: 1.8;
+  color: #555;
 }
 
 /* Portfolio Section */
 #portfolio {
   background-color: #fff;
-  padding: 60px 0;
+  padding: 80px 20px;
+  text-align: center;
 }
 
 .portfolio-items {
@@ -67,20 +146,22 @@ nav ul li a:hover {
 }
 
 .portfolio-item {
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  background-color: #f9f9f9;
 }
 
 .portfolio-item:hover {
   transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Contact Section */
 #contact {
   background-color: #f9f9f9;
-  padding: 60px 0;
+  padding: 80px 20px;
   text-align: center;
 }
 
@@ -89,38 +170,48 @@ nav ul li a:hover {
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 18px;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 1em;
+  border-radius: 8px;
+  font-size: 1.1em;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #f4b400;
+  box-shadow: 0 0 8px rgba(244, 180, 0, 0.5);
+  outline: none;
 }
 
 .contact-form button {
   padding: 15px;
   background-color: #333;
   color: #fff;
-  font-size: 1em;
+  font-size: 1.1em;
+  font-weight: bold;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
 }
 
 .contact-form button:hover {
   background-color: #f4b400;
+  transform: scale(1.05);
 }
 
 /* Footer */
 footer {
   background-color: #333;
   color: #fff;
-  padding: 30px 0;
+  padding: 40px 20px;
   text-align: center;
 }
 
@@ -128,7 +219,9 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
   padding-bottom: 20px;
   border-bottom: 1px solid #444;
 }
@@ -152,15 +245,9 @@ footer {
   color: #f4b400;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
-    text-align: center;
-  }
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
+/* Footer Bottom */
+.footer-bottom {
+  padding-top: 20px;
+  font-size: 0.9em;
+  color: #ccc;
 }
