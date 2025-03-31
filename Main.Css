@@ -1,106 +1,101 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
   color: #333;
+  transition: background 0.3s ease-in-out;
 }
 
 .container {
-  width: 90%;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Header */
 header {
-  background: #333;
-  color: white;
+  background-color: #333;
   padding: 20px 0;
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
 }
 
 nav ul li a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #ff9800;
+  color: #f4b400;
 }
 
-/* Sections */
-section {
+/* About Section */
+#about {
+  background-color: #f4f4f4;
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* Portfolio Section */
+#portfolio {
+  background-color: #fff;
   padding: 60px 0;
 }
 
-h2 {
-  text-align: center;
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-/* Portfolio */
 .portfolio-items {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
-  margin-top: 40px;
+  padding-top: 20px;
 }
 
 .portfolio-item {
-  background: white;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
+
+/* Contact Section */
+#contact {
+  background-color: #f9f9f9;
+  padding: 60px 0;
   text-align: center;
 }
 
-.portfolio-item img {
-  width: 100%;
-  height: auto;
-}
-
-.portfolio-item h3 {
-  font-size: 1.5em;
-  margin: 10px 0;
-}
-
-/* Contact Form */
 .contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
   max-width: 600px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 1em;
@@ -118,32 +113,28 @@ h2 {
 }
 
 .contact-form button:hover {
-  background-color: #ff9800;
+  background-color: #f4b400;
 }
 
 /* Footer */
 footer {
-  background: #222;
-  color: white;
-  padding: 40px 0;
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
   text-align: center;
 }
 
 .footer-content {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  justify-content: space-around;
   gap: 20px;
-}
-
-.footer-section {
-  flex: 1;
-  min-width: 250px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #444;
 }
 
 .footer-section h3 {
-  font-size: 1.5em;
+  color: #f4b400;
 }
 
 .footer-section ul {
@@ -151,21 +142,25 @@ footer {
   padding: 0;
 }
 
-.footer-section ul li {
-  margin: 5px 0;
-}
-
 .footer-section ul li a {
-  color: white;
+  color: #fff;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .footer-section ul li a:hover {
-  color: #ff9800;
+  color: #f4b400;
 }
 
-.footer-bottom {
-  margin-top: 20px;
-  border-top: 1px solid #444;
-  padding-top: 10px;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
 }
