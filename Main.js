@@ -49,23 +49,24 @@ menuToggle.style.cssText = `
     border-radius: 5px;
     font-size: 1.2em;
     transition: background 0.3s;
-    display: none;
     z-index: 1001;
 `;
 document.body.appendChild(menuToggle);
 
 menuToggle.addEventListener('click', () => {
     nav.classList.toggle('show');
-    nav.style.display = nav.classList.contains('show') ? 'flex' : 'none';
+    nav.classList.contains('show') ? nav.style.display = 'flex' : nav.style.display = 'none';
 });
 
 // Responsive Menu Handling
 const handleResize = () => {
     if (window.innerWidth <= 768) {
         menuToggle.style.display = 'block';
+        nav.classList.remove('show'); // Ensures menu is hidden on resize
         nav.style.display = 'none';
     } else {
         menuToggle.style.display = 'none';
+        nav.classList.add('show'); // Makes sure menu is visible on larger screens
         nav.style.display = 'flex';
     }
 };
