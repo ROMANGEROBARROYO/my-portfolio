@@ -13,31 +13,129 @@
 <header>
   <div class="container">
     <!-- Bold the "Roman Gero Arroyo" logo -->
-    <h1 class="logo" style="font-weight: bold;">Portfolio</h1>
+   <h1 class="logo" style="
+    font-weight: bold; 
+    font-size: 2.5rem; 
+    color: #ffffff; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    text-align: center; 
+    position: relative;
+    display: inline-white;
+    padding: 10px 20px;
+    transition: color 0.3s ease-in-out;
+">
+  Portfolio
+</h1>
+
     <nav>
       <ul class="nav-links">
-        <li>
-<a href="#about" class="nav-link" style="font-weight: bold; color: #696969;" aria-label="Learn more about me">
-  <i class="fa fa-user" aria-hidden="true" style="margin-right: 8px;"></i> About Me
-  <span class="tooltip" style="display: none; position: absolute; background-color: #333; color: #fff; padding: 5px 10px; border-radius: 4px; font-size: 0.9em; white-space: nowrap; top: 30px; left: 50%; transform: translateX(-50%); z-index: 10;">Learn more about my background, skills, and experience.</span>
-</a>
-
-</li>
-
-<li>
-  <a href="#portfolio" class="nav-link" style="font-weight: bold; color: #696969;" aria-label="View my portfolio">
-    <i class="fa fa-briefcase" aria-hidden="true" style="margin-right: 8px;"></i> projects
-    <span class="tooltip" style="display: none; position: absolute; background-color: #333; color: #fff; padding: 5px 10px; border-radius: 4px; font-size: 0.9em; white-space: nowrap; top: 30px; left: 50%; transform: translateX(-50%); z-index: 10;">Explore the projects I've worked on and created.</span>
+      <li style="position: relative; list-style: none;">
+  <a href="#about" class="nav-link" style="
+      font-weight: bold; 
+      color: #696969; 
+      text-decoration: none; 
+      display: flex; 
+      align-items: center; 
+      transition: color 0.3s ease-in-out;
+    " 
+    aria-label="Learn more about me">
+    <i class="fa fa-user" aria-hidden="true" style="margin-right: 8px;"></i> About Me
   </a>
+
+  <!-- Tooltip -->
+  <span class="tooltip" style="
+      position: absolute; 
+      background-color: #333; 
+      color: #fff; 
+      padding: 6px 12px; 
+      border-radius: 5px; 
+      font-size: 0.9em; 
+      white-space: nowrap; 
+      top: 35px; 
+      left: 50%; 
+      transform: translateX(-50%) scale(0.9);
+      opacity: 0;
+      visibility: hidden;
+      z-index: 10;
+      transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    ">
+    Learn more about my background, skills, and experience.
+  </span>
 </li>
 
 
-<li>
-  <a href="#contact" class="nav-link" style="font-weight: bold; color: #696969;" aria-label="Get in touch with me">
+<li style="position: relative; list-style: none;">
+  <a href="#portfolio" class="nav-link" style="
+      font-weight: bold; 
+      color: #696969; 
+      text-decoration: none; 
+      display: flex; 
+      align-items: center; 
+      transition: color 0.3s ease-in-out;
+    " 
+    aria-label="View my portfolio">
+    <i class="fa fa-briefcase" aria-hidden="true" style="margin-right: 8px;"></i> Projects
+  </a>
+
+  <!-- Tooltip -->
+  <span class="tooltip" style="
+      position: absolute; 
+      background-color: #333; 
+      color: #fff; 
+      padding: 6px 12px; 
+      border-radius: 5px; 
+      font-size: 0.9em; 
+      white-space: nowrap; 
+      top: 35px; 
+      left: 50%; 
+      transform: translateX(-50%) scale(0.9);
+      opacity: 0;
+      visibility: hidden;
+      z-index: 10;
+      transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    ">
+    Explore the projects I've worked on and created.
+  </span>
+</li>
+
+
+
+<li style="position: relative; list-style: none;">
+  <a href="#contact" class="nav-link" style="
+      font-weight: bold; 
+      color: #696969; 
+      text-decoration: none; 
+      display: flex; 
+      align-items: center; 
+      transition: color 0.3s ease-in-out;
+    " 
+    aria-label="Get in touch with me">
     <i class="fa fa-envelope" aria-hidden="true" style="margin-right: 8px;"></i> Contact
-    <span class="tooltip" style="display: none;">Reach out for collaboration or inquiries.</span>
   </a>
+  
+  <!-- Tooltip -->
+  <span class="tooltip" style="
+      display: none; 
+      position: absolute; 
+      bottom: -25px; 
+      left: 50%; 
+      transform: translateX(-50%); 
+      background: #333; 
+      color: #fff; 
+      padding: 6px 10px; 
+      font-size: 0.9em; 
+      border-radius: 5px; 
+      white-space: nowrap; 
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    ">
+    Reach out for collaboration or inquiries.
+  </span>
 </li>
+
 
       </ul>
     </nav>
@@ -45,15 +143,24 @@
 </header>
 
 
-<section id="about" class="section" style="background-color: #f9f9f9; padding: 50px 0;">
-  <div class="container" style="max-width: 800px; margin: 0 auto;">
-    <h2 style="text-align: center; font-size: 2.5em; color: #333;">About Me</h2>
-    <p style="text-align: center; color: #666; font-size: 1.2em; margin-bottom: 30px;">
-      I'm <strong>Roman Gero Arrotyo</strong>, a second-year IT student at <strong>STI Alaminos, Pangasinan</strong>. 
-      Passionate about coding, web development, and always eager to learn new technologies.
+<section id="about" class="section" style="background-color: #f9f9f9; padding: 50px 0; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 8px;">
+  <div class="container" style="max-width: 800px; margin: 0 auto; text-align: center;">
+    <h2 style="font-size: 2.5em; color: #333; margin-bottom: 20px; font-family: 'Poppins', sans-serif;">About Me</h2>
+    <p style="color: #666; font-size: 1.2em; margin-bottom: 30px; line-height: 1.6;">
+      I'm <strong>Roman Gero Arrotyo</strong>, a second-year IT student at <strong>STI Alaminos, Pangasinan</strong>. Passionate about coding, web development, and always eager to learn new technologies. 
+      I specialize in <span style="font-weight: bold; color: #3498db;">HTML, CSS, JavaScript, and Python</span>, and I’m actively working on projects to improve my skills as a <strong>full-stack developer</strong>.
     </p>
+    <p style="color: #333; font-size: 1.1em; font-style: italic;">
+      "Coding is not just a career; it's a passion that drives me to solve real-world problems."
+    </p>
+    <div style="margin-top: 40px;">
+      <a href="#portfolio" style="text-decoration: none; background-color: #3498db; color: #fff; padding: 12px 30px; font-size: 1.1em; border-radius: 5px; transition: background-color 0.3s ease;">
+        Check out my projects
+      </a>
+    </div>
   </div>
 </section>
+
 
 
 <section id="portfolio" class="section" style="background-color: #f9f9f9; padding: 50px 0;">
@@ -197,18 +304,25 @@
       
       <div class="footer-section about">
         <h3>About Me</h3>
-        <p>
-          I'm <strong>Roman Gero Arrotyo</strong>, a second-year IT student at 
-          <strong>STI Alaminos, Pangasinan</strong>. Passionate about coding and 
-          web development.
-        </p>
+<p>
+  I'm <strong>Roman Gero Arrotyo</strong>, a second-year IT student at 
+  <strong>STI Alaminos, Pangasinan</strong>. Passionate about coding and 
+  web development, specializing in <strong>HTML, CSS, JavaScript, and Python</strong>. 
+  I aspire to become a <strong>full-stack developer</strong>.
+</p>
+
       </div>
 
-      <div class="footer-section contact">
-        <h3>Contact</h3>
-        <p>Email: <a href="mailto:geroarroyo2233@email.com">geroarroyo2233@email.com</a></p>
-        <p>Phone: +63 966-5346-667</p>
-      </div>
+      <div class="footer-section contact" style="background-color: #333; color: #fff; padding: 30px 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+  <h3 style="font-size: 2em; text-align: center; margin-bottom: 20px; font-family: 'Poppins', sans-serif;">Contact</h3>
+  <p style="font-size: 1.1em; text-align: center; color: #ccc; margin-bottom: 10px;">
+    <strong>Email:</strong> <a href="mailto:geroarroyo2233@email.com" style="color: #3498db; text-decoration: none; transition: color 0.3s ease;">geroarroyo2233@email.com</a>
+  </p>
+  <p style="font-size: 1.1em; text-align: center; color: #ccc;">
+    <strong>Phone:</strong> <a href="tel:+639665346667" style="color: #3498db; text-decoration: none; transition: color 0.3s ease;">+63 966-5346-667</a>
+  </p>
+</div>
+
 
          <!-- Social Media Links Section -->
     <div class="footer-social" style="display: flex; justify-content: center; gap: 20px;">
@@ -234,9 +348,10 @@
   border-top: 2px solid rgba(255, 255, 255, 0.2);
   width: 100%;
 ">
-  <p style="font-size: 1em; margin: 0;">
-    &copy; 2025 My Portfolio. All rights reserved.
-  </p>
+  <p style="font-size: 1em; margin: 0; text-align: center; color: #777; font-family: 'Poppins', sans-serif;">
+  &copy; 2025 <strong>My Portfolio</strong>. All rights reserved.
+</p>
+
 
   <p style="font-size: 0.9em; opacity: 0.8;">
     Designed & Developed by <strong>ROMAN GERO ARROYO</strong>
