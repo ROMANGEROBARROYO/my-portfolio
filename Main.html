@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My Portfolio | Roman Gero Arrotyo</title>
+  <title>My Portfolio | Roman Gero Arroyo</title>
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
@@ -12,59 +12,166 @@
 
 <header>
   <div class="container">
-    <h1 class="logo">My Portfolio</h1>
+    <!-- Bold the "Roman Gero Arroyo" logo -->
+    <h1 class="logo" style="font-weight: bold;">Portfolio</h1>
     <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="nav-links">
+        <li>
+<a href="#about" class="nav-link" style="font-weight: bold; color: #696969;" aria-label="Learn more about me">
+  <i class="fa fa-user" aria-hidden="true" style="margin-right: 8px;"></i> About Me
+  <span class="tooltip" style="display: none; position: absolute; background-color: #333; color: #fff; padding: 5px 10px; border-radius: 4px; font-size: 0.9em; white-space: nowrap; top: 30px; left: 50%; transform: translateX(-50%); z-index: 10;">Learn more about my background, skills, and experience.</span>
+</a>
+
+</li>
+
+<li>
+  <a href="#portfolio" class="nav-link" style="font-weight: bold; color: #696969;" aria-label="View my portfolio">
+    <i class="fa fa-briefcase" aria-hidden="true" style="margin-right: 8px;"></i> projects
+    <span class="tooltip" style="display: none; position: absolute; background-color: #333; color: #fff; padding: 5px 10px; border-radius: 4px; font-size: 0.9em; white-space: nowrap; top: 30px; left: 50%; transform: translateX(-50%); z-index: 10;">Explore the projects I've worked on and created.</span>
+  </a>
+</li>
+
+
+<li>
+  <a href="#contact" class="nav-link" style="font-weight: bold; color: #696969;" aria-label="Get in touch with me">
+    <i class="fa fa-envelope" aria-hidden="true" style="margin-right: 8px;"></i> Contact
+    <span class="tooltip" style="display: none;">Reach out for collaboration or inquiries.</span>
+  </a>
+</li>
+
       </ul>
     </nav>
   </div>
 </header>
 
-<section id="about" class="section">
-  <div class="container">
-    <h2>About Me</h2>
-    <p>I'm <strong>Roman Gero Arrotyo</strong>, a second-year IT student at STI Alaminos, Pangasinan. Passionate about coding and web development.</p>
+
+<section id="about" class="section" style="background-color: #f9f9f9; padding: 50px 0;">
+  <div class="container" style="max-width: 800px; margin: 0 auto;">
+    <h2 style="text-align: center; font-size: 2.5em; color: #333;">About Me</h2>
+    <p style="text-align: center; color: #666; font-size: 1.2em; margin-bottom: 30px;">
+      I'm <strong>Roman Gero Arrotyo</strong>, a second-year IT student at <strong>STI Alaminos, Pangasinan</strong>. 
+      Passionate about coding, web development, and always eager to learn new technologies.
+    </p>
   </div>
 </section>
 
-<section id="portfolio" class="section">
-  <div class="container">
-    <h2>My Work</h2>
-    <div class="portfolio-items">
-      <div class="portfolio-item"><img src="https://via.placeholder.com/300x200" alt="Project 1"><h3>Project 1</h3></div>
-      <div class="portfolio-item"><img src="https://via.placeholder.com/300x200" alt="Project 2"><h3>Project 2</h3></div>
-      <div class="portfolio-item"><img src="https://via.placeholder.com/300x200" alt="Project 3"><h3>Project 3</h3></div>
-      <div class="portfolio-item"><img src="https://via.placeholder.com/300x200" alt="Project 4"><h3>Project 4</h3></div>
-      <div class="portfolio-item"><img src="https://via.placeholder.com/300x200" alt="Project 5"><h3>Project 5</h3></div>
-      <div class="portfolio-item"><img src="https://via.placeholder.com/300x200" alt="Project 6"><h3>Project 6</h3></div>
+
+<section id="portfolio" class="section" style="background-color: #f9f9f9; padding: 50px 0;">
+  <div class="container" style="max-width: 1200px; margin: 0 auto;">
+    <h2 style="text-align: center; font-size: 2.5em; color: #333; margin-bottom: 40px;">My Work</h2>
+    <div class="portfolio-items" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px;">
+      <div class="portfolio-item" style="position: relative; overflow: hidden; border-radius: 8px; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+        <img src="https://via.placeholder.com/300x200" alt="Project 1" style="width: 100%; height: auto; border-radius: 8px; transition: transform 0.3s ease;">
+        <h3 style="position: absolute; bottom: 10px; left: 10px; color: #fff; font-size: 1.5em; background-color: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 5px;">Project 1</h3>
+      </div>
+      <div class="portfolio-item" style="position: relative; overflow: hidden; border-radius: 8px; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+        <img src="https://via.placeholder.com/300x200" alt="Project 2" style="width: 100%; height: auto; border-radius: 8px; transition: transform 0.3s ease;">
+        <h3 style="position: absolute; bottom: 10px; left: 10px; color: #fff; font-size: 1.5em; background-color: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 5px;">Project 2</h3>
+      </div>
+      <div class="portfolio-item" style="position: relative; overflow: hidden; border-radius: 8px; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+        <img src="https://via.placeholder.com/300x200" alt="Project 3" style="width: 100%; height: auto; border-radius: 8px; transition: transform 0.3s ease;">
+        <h3 style="position: absolute; bottom: 10px; left: 10px; color: #fff; font-size: 1.5em; background-color: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 5px;">Project 3</h3>
+      </div>
+      <div class="portfolio-item" style="position: relative; overflow: hidden; border-radius: 8px; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+        <img src="https://via.placeholder.com/300x200" alt="Project 4" style="width: 100%; height: auto; border-radius: 8px; transition: transform 0.3s ease;">
+        <h3 style="position: absolute; bottom: 10px; left: 10px; color: #fff; font-size: 1.5em; background-color: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 5px;">Project 4</h3>
+      </div>
+      <div class="portfolio-item" style="position: relative; overflow: hidden; border-radius: 8px; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+        <img src="https://via.placeholder.com/300x200" alt="Project 5" style="width: 100%; height: auto; border-radius: 8px; transition: transform 0.3s ease;">
+        <h3 style="position: absolute; bottom: 10px; left: 10px; color: #fff; font-size: 1.5em; background-color: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 5px;">Project 5</h3>
+      </div>
+      <div class="portfolio-item" style="position: relative; overflow: hidden; border-radius: 8px; transition: transform 0.3s ease-in-out; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+        <img src="https://via.placeholder.com/300x200" alt="Project 6" style="width: 100%; height: auto; border-radius: 8px; transition: transform 0.3s ease;">
+        <h3 style="position: absolute; bottom: 10px; left: 10px; color: #fff; font-size: 1.5em; background-color: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 5px;">Project 6</h3>
+      </div>
     </div>
   </div>
 </section>
 
 <section id="skills" class="section" style="background-color: #f0f0f0; padding: 50px 0;">
   <div class="container">
-    <h2>My Skills</h2>
-    <div class="skills-list">
-      <div class="skill-item">
-        <h3>HTML & CSS</h3>
-        <div class="progress-bar" style="width: 90%;"></div>
+    <h2 style="text-align: center; font-size: 2.5em; color: #333; margin-bottom: 40px;">My Skills</h2>
+    <div class="skills-list" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 30px;">
+      <div class="skill-item" style="display: flex; flex-direction: column; align-items: center;">
+        <h3 style="font-size: 1.5em; color: #333;">HTML & CSS</h3>
+        <div class="progress-bar-wrapper" style="width: 100%; background-color: #ddd; border-radius: 8px; overflow: hidden;">
+          <div class="progress-bar" style="width: 90%; height: 10px; background-color: #4caf50; border-radius: 8px;"></div>
+        </div>
       </div>
-      <div class="skill-item">
-        <h3>JavaScript</h3>
-        <div class="progress-bar" style="width: 80%;"></div>
+      <div class="skill-item" style="display: flex; flex-direction: column; align-items: center;">
+        <h3 style="font-size: 1.5em; color: #333;">JavaScript</h3>
+        <div class="progress-bar-wrapper" style="width: 100%; background-color: #ddd; border-radius: 8px; overflow: hidden;">
+          <div class="progress-bar" style="width: 80%; height: 10px; background-color: #ff9800; border-radius: 8px;"></div>
+        </div>
       </div>
-      <div class="skill-item">
-        <h3>React</h3>
-        <div class="progress-bar" style="width: 70%;"></div>
+      <div class="skill-item" style="display: flex; flex-direction: column; align-items: center;">
+        <h3 style="font-size: 1.5em; color: #333;">React</h3>
+        <div class="progress-bar-wrapper" style="width: 100%; background-color: #ddd; border-radius: 8px; overflow: hidden;">
+          <div class="progress-bar" style="width: 70%; height: 10px; background-color: #00bcd4; border-radius: 8px;"></div>
+        </div>
       </div>
-      <div class="skill-item">
-        <h3>Node.js</h3>
-        <div class="progress-bar" style="width: 65%;"></div>
+      <div class="skill-item" style="display: flex; flex-direction: column; align-items: center;">
+        <h3 style="font-size: 1.5em; color: #333;">Node.js</h3>
+        <div class="progress-bar-wrapper" style="width: 100%; background-color: #ddd; border-radius: 8px; overflow: hidden;">
+          <div class="progress-bar" style="width: 65%; height: 10px; background-color: #6cc24a; border-radius: 8px;"></div>
+        </div>
       </div>
     </div>
+  </div>
+</section>
+
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="section" style="background-color: #f9f9f9; padding: 50px 0;">
+  <div class="container" style="max-width: 800px; margin: 0 auto;">
+    <h2 style="text-align: center; color: #333; font-size: 2.5em; font-weight: bold;">Contact Me</h2>
+    <p style="text-align: center; color: #666; margin-bottom: 40px; font-size: 1.2em;">
+      If you'd like to work together or have any questions, feel free to get in touch!
+    </p>
+    
+    <form action="#" method="POST" class="contact-form" style="display: flex; flex-direction: column; gap: 20px;">
+      <!-- Name -->
+      <div class="form-group" style="display: flex; flex-direction: column;">
+        <label for="name" style="color: #333; margin-bottom: 5px; font-size: 1.1em; font-weight: 500;">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required
+               style="padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 1.1em; transition: border 0.3s;">
+      </div>
+
+      <!-- Email -->
+      <div class="form-group" style="display: flex; flex-direction: column;">
+        <label for="email" style="color: #333; margin-bottom: 5px; font-size: 1.1em; font-weight: 500;">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required
+               style="padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 1.1em; transition: border 0.3s;">
+      </div>
+
+      <!-- Phone -->
+      <div class="form-group" style="display: flex; flex-direction: column;">
+        <label for="phone" style="color: #333; margin-bottom: 5px; font-size: 1.1em; font-weight: 500;">Your Phone (optional)</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"
+               style="padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 1.1em; transition: border 0.3s;">
+      </div>
+
+      <!-- Subject -->
+      <div class="form-group" style="display: flex; flex-direction: column;">
+        <label for="subject" style="color: #333; margin-bottom: 5px; font-size: 1.1em; font-weight: 500;">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Enter the subject" required
+               style="padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 1.1em; transition: border 0.3s;">
+      </div>
+
+      <!-- Message -->
+      <div class="form-group" style="display: flex; flex-direction: column;">
+        <label for="message" style="color: #333; margin-bottom: 5px; font-size: 1.1em; font-weight: 500;">Your Message</label>
+        <textarea id="message" name="message" placeholder="Write your message here" required
+                  style="padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-size: 1.1em; height: 150px; transition: border 0.3s;"></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" style="padding: 15px; background-color: #333; color: #fff; font-size: 1.1em; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease, transform 0.3s;">
+        Send Message
+      </button>
+    </form>
   </div>
 </section>
 
@@ -81,51 +188,7 @@
   </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact" class="section" style="background-color: #f9f9f9; padding: 50px 0;">
-  <div class="container" style="max-width: 800px; margin: 0 auto;">
-    <h2 style="text-align: center; color: #333; font-size: 2.5em;">Contact Me</h2>
-    <p style="text-align: center; color: #666; margin-bottom: 40px;">
-      If you'd like to work together or have any questions, feel free to get in touch!
-    </p>
-    
-    <form action="#" method="POST" class="contact-form" style="display: flex; flex-direction: column; gap: 20px;">
-      <div class="form-group" style="display: flex; flex-direction: column;">
-        <label for="name" style="color: #333; margin-bottom: 5px;">Your Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required
-               style="padding: 10px; border: 1px solid #ddd; border-radius: 5px; font-size: 1em;">
-      </div>
 
-      <div class="form-group" style="display: flex; flex-direction: column;">
-        <label for="email" style="color: #333; margin-bottom: 5px;">Your Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required
-               style="padding: 10px; border: 1px solid #ddd; border-radius: 5px; font-size: 1em;">
-      </div>
-
-      <div class="form-group" style="display: flex; flex-direction: column;">
-        <label for="phone" style="color: #333; margin-bottom: 5px;">Your Phone (optional)</label>
-        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"
-               style="padding: 10px; border: 1px solid #ddd; border-radius: 5px; font-size: 1em;">
-      </div>
-
-      <div class="form-group" style="display: flex; flex-direction: column;">
-        <label for="subject" style="color: #333; margin-bottom: 5px;">Subject</label>
-        <input type="text" id="subject" name="subject" placeholder="Enter the subject" required
-               style="padding: 10px; border: 1px solid #ddd; border-radius: 5px; font-size: 1em;">
-      </div>
-
-      <div class="form-group" style="display: flex; flex-direction: column;">
-        <label for="message" style="color: #333; margin-bottom: 5px;">Your Message</label>
-        <textarea id="message" name="message" placeholder="Write your message here" required
-                  style="padding: 10px; border: 1px solid #ddd; border-radius: 5px; font-size: 1em; height: 150px;"></textarea>
-      </div>
-
-      <button type="submit" style="padding: 15px; background-color: #333; color: #fff; font-size: 1em; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
-        Send Message
-      </button>
-    </form>
-  </div>
-</section>
 
 
 <footer>
@@ -141,36 +204,70 @@
         </p>
       </div>
 
-      <div class="footer-section links">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-
       <div class="footer-section contact">
         <h3>Contact</h3>
         <p>Email: <a href="mailto:geroarroyo2233@email.com">geroarroyo2233@email.com</a></p>
         <p>Phone: +63 966-5346-667</p>
       </div>
 
-      <div class="footer-section social">
-        <h3>Follow Me</h3>
-     <a href="https://facebook.com" target="_blank">Facebook</a>
-        <a href="https://twitter.com" target="_blank">Twitter</a>
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-      </div>
+         <!-- Social Media Links Section -->
+    <div class="footer-social" style="display: flex; justify-content: center; gap: 20px;">
+      <a href="#" style="color: #fff; font-size: 1.5em; transition: color 0.3s ease;"><i class="fab fa-facebook"></i></a>
+      <a href="#" style="color: #fff; font-size: 1.5em; transition: color 0.3s ease;"><i class="fab fa-twitter"></i></a>
+      <a href="#" style="color: #fff; font-size: 1.5em; transition: color 0.3s ease;"><i class="fab fa-linkedin"></i></a>
+      <a href="#" style="color: #fff; font-size: 1.5em; transition: color 0.3s ease;"><i class="fab fa-github"></i></a>
+    </div>
 
     </div>
 
-     <div class="footer-bottom">
-      <p>&copy; 2025 My Portfolio. All rights reserved.</p>
-      <a href="#" class="back-to-top">Back to Top</a>
-    </div>
-</footer>
+      <!-- Footer Bottom Section -->
+<div class="footer-bottom" style="
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column; 
+  gap: 10px; 
+  padding: 20px; 
+  background: #222; 
+  color: #fff; 
+  text-align: center; 
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+">
+  <p style="font-size: 1em; margin: 0;">
+    &copy; 2025 My Portfolio. All rights reserved.
+  </p>
 
+  <p style="font-size: 0.9em; opacity: 0.8;">
+    Designed & Developed by <strong>ROMAN GERO ARROYO</strong>
+  </p>
+
+  <div style="display: flex; gap: 15px;">
+    <a href="https://github.com/ROMANGEROARROYO" target="_blank" style="color: #fff; text-decoration: none; font-size: 1.1em; transition: color 0.3s ease;">
+      GitHub
+    </a>
+    <a href="https://linkedin.com/in/ROMANGEROARROYO" target="_blank" style="color: #fff; text-decoration: none; font-size: 1.1em; transition: color 0.3s ease;">
+      LinkedIn
+    </a>
+    <a href="mailto:geroarroyo2233@email.com" style="color: #fff; text-decoration: none; font-size: 1.1em; transition: color 0.3s ease;">
+      Contact
+    </a>
+  </div>
+
+  <a href="#top" class="back-to-top" style="
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 1.1em; 
+    cursor: pointer; 
+    transition: color 0.3s ease, transform 0.3s ease;
+  ">
+    ↑ Back to Top
+  </a>
+</div>
+
+
+<!-- Font Awesome (for icons) -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 
 </body>
