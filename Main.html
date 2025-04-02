@@ -31,17 +31,23 @@
     <nav>
       <ul class="nav-links">
       <li style="position: relative; list-style: none;">
-  <a href="#about" class="nav-link" style="
+<a href="#about" class="nav-link" 
+   style="
       font-weight: bold; 
-      color: #696969; 
+      color: #444; 
       text-decoration: none; 
       display: flex; 
       align-items: center; 
-      transition: color 0.3s ease-in-out;
-    " 
-    aria-label="Learn more about me">
-    <i class="fa fa-user" aria-hidden="true" style="margin-right: 8px;"></i> About Me
-  </a>
+      gap: 10px;
+      padding: 10px 15px;
+      border-radius: 6px;
+      background: transparent;
+      transition: all 0.3s ease-in-out;
+   " 
+   aria-label="Learn more about me">
+   <i class="fa fa-user" aria-hidden="true" style="font-size: 1.2em;"></i> About Me
+</a>
+
 
   <!-- Tooltip -->
   <span class="tooltip" style="
@@ -65,29 +71,35 @@
 </li>
 
 
-<li style="position: relative; list-style: none;">
-  <a href="#portfolio" class="nav-link" style="
-      font-weight: bold; 
-      color: #696969; 
-      text-decoration: none; 
-      display: flex; 
-      align-items: center; 
-      transition: color 0.3s ease-in-out;
-    " 
-    aria-label="View my portfolio">
-    <i class="fa fa-briefcase" aria-hidden="true" style="margin-right: 8px;"></i> Projects
+<!-- Tooltip Wrapper -->
+<li style="position: relative; display: inline-block;">
+  <a href="#portfolio" class="nav-link" 
+     style="
+        font-weight: bold; 
+        color: #696969; 
+        text-decoration: none; 
+        display: flex; 
+        align-items: center; 
+        gap: 10px;
+        padding: 10px 15px;
+        border-radius: 6px;
+        transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+     " 
+     aria-label="View my portfolio">
+    <i class="fa fa-briefcase" aria-hidden="true" style="font-size: 1.2em;"></i> Projects
   </a>
 
   <!-- Tooltip -->
-  <span class="tooltip" style="
+  <span class="tooltip" 
+    style="
       position: absolute; 
       background-color: #333; 
       color: #fff; 
-      padding: 6px 12px; 
-      border-radius: 5px; 
-      font-size: 0.9em; 
+      padding: 8px 14px; 
+      border-radius: 6px; 
+      font-size: 0.85em; 
       white-space: nowrap; 
-      top: 35px; 
+      top: 40px; 
       left: 50%; 
       transform: translateX(-50%) scale(0.9);
       opacity: 0;
@@ -95,46 +107,52 @@
       z-index: 10;
       transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
     ">
-    Explore the projects I've worked on and created.
+    Explore the projects I've worked on.
   </span>
 </li>
+
 
 
 
 <li style="position: relative; list-style: none;">
-  <a href="#contact" class="nav-link" style="
-      font-weight: bold; 
-      color: #696969; 
-      text-decoration: none; 
-      display: flex; 
-      align-items: center; 
-      transition: color 0.3s ease-in-out;
-    " 
-    aria-label="Get in touch with me">
-    <i class="fa fa-envelope" aria-hidden="true" style="margin-right: 8px;"></i> Contact
+  <a href="#contact" class="nav-link" 
+     style="
+        font-weight: bold; 
+        color: #444; 
+        text-decoration: none; 
+        display: flex; 
+        align-items: center; 
+        gap: 10px;
+        padding: 10px 15px;
+        border-radius: 6px;
+        transition: all 0.3s ease-in-out;
+     " 
+     aria-label="Get in touch with me">
+    <i class="fa fa-envelope" aria-hidden="true" style="font-size: 1.2em;"></i> Contact
   </a>
-  
+
   <!-- Tooltip -->
-  <span class="tooltip" style="
-      display: none; 
+  <span class="tooltip" 
+    style="
       position: absolute; 
-      bottom: -25px; 
+      bottom: -35px; 
       left: 50%; 
-      transform: translateX(-50%); 
+      transform: translateX(-50%) scale(0.95); 
       background: #333; 
       color: #fff; 
-      padding: 6px 10px; 
-      font-size: 0.9em; 
-      border-radius: 5px; 
+      padding: 8px 12px; 
+      font-size: 0.85em; 
+      border-radius: 6px; 
       white-space: nowrap; 
       box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
       opacity: 0;
       visibility: hidden;
-      transition: opacity 0.3s ease, visibility 0.3s ease;
+      transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
     ">
     Reach out for collaboration or inquiries.
   </span>
 </li>
+
 
 
       </ul>
@@ -354,13 +372,26 @@
 </div>
 
 
-         <!-- Social Media Links Section -->
-    <div class="footer-social" style="display: flex; justify-content: center; gap: 20px;">
-      <a href="#" style="color: #fff; font-size: 1.5em; transition: color 0.3s ease;"><i class="fab fa-facebook"></i></a>
-      <a href="#" style="color: #fff; font-size: 1.5em; transition: color 0.3s ease;"><i class="fab fa-twitter"></i></a>
-      <a href="#" style="color: #fff; font-size: 1.5em; transition: color 0.3s ease;"><i class="fab fa-linkedin"></i></a>
-      <a href="#" style="color: #fff; font-size: 1.5em; transition: color 0.3s ease;"><i class="fab fa-github"></i></a>
-    </div>
+    <!-- Social Media Links Section -->
+<div class="footer-social" style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
+  <a href="https://facebook.com/yourprofile" target="_blank" aria-label="Facebook"
+     style="color: #fff; font-size: 1.5em; transition: color 0.3s ease; text-decoration: none;">
+    <i class="fab fa-facebook"></i>
+  </a>
+  <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter"
+     style="color: #fff; font-size: 1.5em; transition: color 0.3s ease; text-decoration: none;">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn"
+     style="color: #fff; font-size: 1.5em; transition: color 0.3s ease; text-decoration: none;">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="https://github.com/yourprofile" target="_blank" aria-label="GitHub"
+     style="color: #fff; font-size: 1.5em; transition: color 0.3s ease; text-decoration: none;">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
+
 
     </div>
 
