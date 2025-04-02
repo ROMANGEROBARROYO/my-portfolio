@@ -5,38 +5,288 @@ body {
   padding: 0;
   background: linear-gradient(135deg, #ffffff, #e6e6e6);
   color: #222;
-  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out, transform 0.5s ease-in-out;
   line-height: 1.6;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  text-align: center;
+}
+
+/* Add a subtle box shadow effect on body */
+body:hover {
+  transform: scale(1.02); /* Slight zoom effect on hover */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Add a glowing effect on the body when in dark mode */
+body.dark-mode {
+  background: linear-gradient(135deg, #333, #555);
+  color: #fff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  outline: none; /* Remove outline on focus for better control */
+}
+
+/* Hover effect: lighter background and slight scale */
+button:hover {
+  background-color: #555;
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Active effect: darken the button when clicked */
+button:active {
+  background-color: #222;
+  transform: scale(1); /* Reset zoom on click */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); /* Subtle shadow when active */
+}
+
+/* Focus effect for accessibility: outline and glow */
+button:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6); /* Blue glow for focus state */
+}
+
+/* Disabled button: make it look inactive */
+button:disabled {
+  background-color: #888;
+  color: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+
+/* General styles for links */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* Necessary for pseudo-element positioning */
+}
+
+/* Hover effect for links */
+a:hover {
+  color: #3498db; /* Blue on hover */
+  transform: translateX(8px); /* Slight movement effect */
+  letter-spacing: 1px; /* Slight increase in letter spacing */
+}
+
+/* Adding underline effect on hover */
+a:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; /* Position under the link */
+  left: 0;
+  width: 100%;
+  height: 2px; /* Thickness of the underline */
+  background-color: #3498db; /* Blue underline */
+  transition: width 0.3s ease; /* Smooth transition for underline width */
+}
+
+/* Optional: Add a subtle shadow on hover */
+a:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow on hover */
+}
+
+
+/* General transition for headings and paragraphs */
+h1, h2, h3, p {
+  transition: opacity 0.5s ease-in-out, transform 0.3s ease; /* Added transform for smooth hover effect */
+}
+
+
+/* Hover effect for headings and paragraphs */
+h1:hover, h2:hover, h3:hover, p:hover {
+  opacity: 0.8; /* Slightly fade out */
+  transform: translateY(-5px); /* Subtle upward movement on hover for more interactivity */
+}
+
+/* Add a subtle animation to headings */
+h1, h2, h3 {
+  animation: fadeInUp 1.2s ease-out;
+}
+
+/* Keyframes for fade-in and slide-up animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); /* Start from below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Final position */
+  }
+}
+
+/* Optional: Adding a subtle box shadow to headings */
+h1, h2, h3 {
+  transition: box-shadow 0.3s ease;
+}
+
+h1:hover, h2:hover, h3:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow effect on hover */
+}
+
+/* Smooth scroll effect */
+html {
+  scroll-behavior: smooth; /* Native smooth scrolling in modern browsers */
+}
+
+/* Fallback for older browsers that don't support scroll-behavior */
+html {
+  -webkit-scroll-behavior: smooth; /* For Safari */
+  -moz-scroll-behavior: smooth; /* For Firefox */
+}
+
+/* Optional: Custom scroll speed (for browsers that support it) */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px; /* Adjust scroll position to offset fixed headers, if any */
+}
+
+
+/* General Body Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ffffff, #e6e6e6);
+  color: #222;
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out; /* Smooth transition for background and text */
+  line-height: 1.6;
+}
+
+/* Dark Mode Background Gradient */
+body.dark-mode {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  transition: background 0.4s ease-in-out; /* Smooth transition when switching to dark mode */
+}
+
+/* Other styles for dark mode (example) */
+body.dark-mode {
+  color: #ecf0f1; /* Light text color in dark mode */
+}
+
+/* Example of how you'd toggle dark mode styles with JS */
+
+
+/* Keyframe for fade-in animation */
+@keyframes fadeInPage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Apply the fadeInPage animation to the entire page */
+body {
+  animation: fadeInPage 1s ease-out; /* 1s duration and ease-out timing */
+}
+
+/* Optionally, you can add a delay to the fade-in effect */
+body {
+  animation: fadeInPage 1s ease-out 0.5s; /* Delay of 0.5s before it starts */
 }
 
 
 .container {
   max-width: 1200px;
-  min-width: 320px; /* Ensures it doesn’t break on small screens */
+  min-width: 320px;
   margin: 0 auto;
   padding: 20px;
   width: 90%;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px; /* Adds consistent spacing */
+  gap: 20px;
+  box-sizing: border-box;
 }
 
-/* Responsive adjustments */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .container {
-    width: 95%; /* More space on smaller screens */
-    padding: 15px;
-    gap: 15px;
-    display: flex;
-    flex-wrap: wrap; /* Ensures content wraps properly */
-    justify-content: center; /* Centers content */
-    min-height: auto; /* Prevents unnecessary stretching */
+    width: 95%; /* Makes the container more adaptive */
+    padding: 15px; /* Reduces padding for compact space */
+    gap: 15px; /* Adjust spacing for smaller screens */
+    flex-wrap: wrap; /* Allows items to wrap if needed */
+    justify-content: center; /* Centers items */
+    border-radius: 8px; /* Slightly reduces the rounded corners */
   }
 
   body {
-    font-size: 14px; /* Adjusts font size for readability */
+    font-size: 14px; /* Adjust text size for readability */
+    padding: 10px; /* Ensures spacing around content */
+    line-height: 1.5; /* Adjusts line height for better readability */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Reduces heading size for smaller screens */
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  button {
+    padding: 8px 16px; /* Reduces button size */
+    font-size: 0.9rem;
+  }
+
+  /* Adjust navigation for mobile */
+  nav ul {
+    flex-direction: column; /* Stack menu items vertically */
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  nav ul li {
+    width: 100%; /* Full width for better clickability */
+  }
+
+  /* Responsive images */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Mobile Menu Styling */
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .mobile-menu.show {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -49,15 +299,12 @@ body {
   }
 }
 
-
-
 /* Dark Mode Styles */
 body.dark-mode {
   background: radial-gradient(circle, #1a1a1a, #0d0d0d);
   color: #e0e0e0;
   transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
 }
-
 
 /* Header */
 header {
@@ -80,7 +327,6 @@ body.dark-mode header {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   color: #333;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -88,47 +334,36 @@ body.dark-mode header {
   justify-content: center;
   text-align: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 body.dark-mode .portfolio-item {
-  background: rgba(50, 50, 50, 0.4); /* Slightly darker for better contrast */
+  background: rgba(50, 50, 50, 0.4);
   backdrop-filter: blur(15px);
-  color: #f5f5f5; /* Softer white for less eye strain */
+  color: #f5f5f5;
   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for better separation */
+  border: 1px solid rgba(255, 255, 255, 0.2);
   transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* Hover effect for dark mode */
 body.dark-mode .portfolio-item:hover {
-  background: rgba(70, 70, 70, 0.5); /* Slightly lighter on hover */
+  background: rgba(70, 70, 70, 0.5);
   box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
   transform: scale(1.03);
 }
-
-
-body.dark-mode .portfolio-item:hover {
-  background: rgba(80, 80, 80, 0.5); /* Slightly lighter for better hover feedback */
-  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.25); /* Increased opacity for more visibility */
-  transform: scale(1.05); /* Adds a smooth zoom effect */
-  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
 
 /* Portfolio Image Hover Effect */
 .portfolio-image img {
   width: 100%;
   transition: transform 0.4s ease-in-out, filter 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  border-radius: 10px; /* Soft rounded corners for a modern look */
+  border-radius: 10px;
 }
 
-/* Hover Effect */
 .portfolio-image img:hover {
-  transform: scale(1.05); /* Slight zoom effect */
-  filter: brightness(1.2) contrast(1.1); /* Enhances image clarity */
-  opacity: 0.9; /* Subtle fade effect */
+  transform: scale(1.05);
+  filter: brightness(1.2) contrast(1.1);
+  opacity: 0.9;
 }
-
 
 /* Overlay Animation */
 .overlay {
@@ -212,4 +447,77 @@ footer {
 
 body.dark-mode footer {
   background: linear-gradient(180deg, #111, #000);
+}
+
+/* Skills Section */
+#skills {
+  background-color: #f0f0f0;
+  padding: 50px 0;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.skill-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: #4caf50;
+  border-radius: 5px;
+  transition: width 0.5s ease;
+}
+
+/* Testimonials Section */
+#testimonials {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.testimonial {
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.testimonial p {
+  color: #333;
+  font-size: 1.1em;
+}
+
+/* Newsletter Section */
+#newsletter {
+  background-color: #333;
+  color: white;
+  padding: 50px 0;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 20px;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+.newsletter-form button {
+  padding: 10px 15px;
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #bbb;
 }
