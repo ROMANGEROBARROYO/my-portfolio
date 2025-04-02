@@ -1,3 +1,17 @@
+/* Define reusable variables for colors, spacing, etc. */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #9b59b6;
+  --light-background: #f4f4f4;
+  --dark-background: #2c3e50;
+  --font-size-base: 16px;
+  --font-size-heading: 1.25rem;
+  --spacing-small: 8px;
+  --spacing-medium: 10px;
+}
+
+
+
 /* General Styles */
 body {
   font-family: 'Poppins', sans-serif;
@@ -475,9 +489,41 @@ footer {
   padding: 20px;
 }
 
+/* Dark Mode Footer Styling */
 body.dark-mode footer {
-  background: linear-gradient(180deg, #111, #000);
+  background: linear-gradient(180deg, #111, #000); /* Gradient background for dark mode */
+  color: #fff; /* White text color for contrast */
+  padding: 40px 0; /* Spacing around the footer */
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth transition effects */
 }
+
+/* Footer Links in Dark Mode */
+body.dark-mode footer a {
+  color: #ccc; /* Lighter text color for links */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth color change */
+}
+
+body.dark-mode footer a:hover {
+  color: #3498db; /* Blue color on hover for links */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer Social Icons (if any) */
+body.dark-mode footer .social-icons a {
+  color: #fff; /* White social icon color */
+  margin: 0 10px; /* Spacing between icons */
+  font-size: 1.5em; /* Size of icons */
+  transition: color 0.3s ease; /* Smooth transition for icon color */
+}
+
+body.dark-mode footer .social-icons a:hover {
+  color: #3498db; /* Change icon color on hover */
+}
+
+/* Footer Text or Copyright Section */
+body.dark
 
 /* Skills Section */
 #skills {
@@ -485,69 +531,207 @@ body.dark-mode footer {
   padding: 50px 0;
 }
 
+/* Base styling for the skills list */
 .skills-list {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 15px; /* Spacing between skill items */
+  padding: 20px; /* Padding around the list */
+  margin-top: 20px; /* Top margin for separation */
+  background-color: #f4f4f4; /* Light background color */
+  border-radius: 8px; /* Rounded corners for a smooth look */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
 }
 
+/* Hover effect for the skills list container */
+.skills-list:hover {
+  transform: scale(1.02); /* Slight zoom effect */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Base styling for each skill item */
 .skill-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 20px; /* Add padding to create space around the content */
+  margin-bottom: 10px; /* Add space between skill items */
+  border: 1px solid #ddd; /* Light border for separation */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  background-color: #f9f9f9; /* Light background */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
 }
 
+/* Hover effect to add depth */
+.skill-item:hover {
+  transform: translateY(-5px); /* Lift the item up when hovered */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow to give a floating effect */
+}
 .progress-bar {
   height: 8px;
-  background-color: #4caf50;
-  border-radius: 5px;
-  transition: width 0.5s ease;
+  background-color: #4caf50; /* Green color for progress */
+  border-radius: 5px; /* Rounded corners */
+  transition: width 0.5s ease, background-color 0.3s ease; /* Smooth transition */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  overflow: hidden; /* Hide any overflowed content */
 }
 
 /* Testimonials Section */
 #testimonials {
-  background-color: #f9f9f9;
-  padding: 50px 0;
+  background-color: #f9f9f9; /* Light background color */
+  padding: 60px 20px; /* Padding for spacing */
+  text-align: center; /* Center the content */
+  border-radius: 10px; /* Rounded corners for smooth design */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.testimonial {
-  margin-bottom: 30px;
-  font-style: italic;
-}
-
-.testimonial p {
+/* Title Styling */
+#testimonials h2 {
   color: #333;
-  font-size: 1.1em;
+  font-size: 2.5em; /* Larger font for the section title */
+  margin-bottom: 30px; /* Space below the title */
+  font-weight: bold;
+  text-transform: uppercase; /* Uppercase for emphasis */
+  letter-spacing: 1px; /* Add spacing between letters */
+  transition: color 0.3s ease; /* Smooth color transition */
 }
+
+/* Hover effect for title */
+#testimonials h2:hover {
+  color: #3498db; /* Change color on hover */
+}
+
+/* Testimonial Section */
+.testimonial {
+  background-color: #f9f9f9; /* Light background for contrast */
+  padding: 50px 20px; /* Add some space around the content */
+  border-radius: 8px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 800px;
+  margin: 0 auto; /* Center the testimonial container */
+  text-align: center; /* Center align the text */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Testimonial Text */
+.testimonial p {
+  color: #333; /* Dark text for readability */
+  font-size: 1.1em; /* Slightly larger font size */
+  line-height: 1.6; /* Line height for better readability */
+  margin-bottom: 20px; /* Add space below the paragraph */
+  font-style: italic; /* Give it a softer, more personal touch */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Hover effect for testimonial text */
+.testimonial p:hover {
+  color: #3498db; /* Change text color on hover */
+}
+
+/* Author's Name Styling */
+.testimonial .author {
+  font-weight: bold;
+  color: #555; /* Slightly lighter color for the author's name */
+  font-size: 1.2em; /* Larger font size for emphasis */
+  margin-top: 10px; /* Add some space between the text and author's name */
+  text-transform: uppercase; /* Uppercase for a strong statement */
+  letter-spacing: 1px; /* Add some space between letters */
+  transition: color 0.3s ease;
+}
+
+/* Author's Name Hover Effect */
+.testimonial .author:hover {
+  color: #3498db; /* Change color on hover for emphasis */
+}
+
+/* Add a subtle border to the top of the*
+
 
 /* Newsletter Section */
 #newsletter {
-  background-color: #333;
-  color: white;
-  padding: 50px 0;
+  background-color: #333; /* Dark background for the section */
+  color: white; /* Text color */
+  padding: 50px 0; /* Padding for spacing */
+  text-align: center; /* Center align text for better presentation */
+  position: relative; /* For pseudo-elements or absolute positioning */
 }
 
+/* Heading Style */
+#newsletter h2 {
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #f39c12; /* A bright color for the heading */
+  transition: color 0.3s ease;
+}
+
+/* Hover effect on heading */
+#newsletter h2:hover {
+  color: #e67e22; /* Change color on hover */
+}
+
+/* Subheading or description */
+#newsletter p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #ccc; /* Lighter text for readability */
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect on paragraph */
+#newsletter p:hover {
+  color: #fff; /* White text on hover for contrast */
+}
 .newsletter-form {
   display: flex;
   gap: 20px;
+  align-items: center; /* Vertically center elements */
+  justify-content: center; /* Center the form items horizontally */
+  flex-wrap: wrap; /* Allow elements to wrap on smaller screens */
+  margin: 20px auto; /* Center the form on the page with spacing */
+  max-width: 800px; /* Limit the width of the form */
 }
 
 .newsletter-form input {
-  padding: 10px;
+  padding: 10px 15px;
   font-size: 1em;
   border-radius: 5px;
+  border: 2px solid #ccc; /* Light border for initial state */
+  width: 100%;
+  transition: border 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  background-color: #fff; /* Initial background color */
+}
+
+   /* Focus state to improve accessibility and interaction */
+.newsletter-form input:focus {
+  outline: none; /* Remove the default outline */
+  border-color: #3498db; /* Blue border when focused */
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.5); /* Subtle blue shadow around input */
+  background-color: #f7faff; /* Light background color when focused */
 }
 
 .newsletter-form button {
-  padding: 10px 15px;
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: #3498db; /* Initial background color */
+  color: #fff;
+  padding: 12px 24px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-size: 1.2em;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
 
 .newsletter-form button:hover {
-  background-color: #bbb;
+  background-color: #bbb; /* Change background on hover */
+  color: #333; /* Optional: Change text color on hover */
+  transform: scale(1.05); /* Slight scale for interaction */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  cursor: pointer; /* Change cursor to pointer */
 }
