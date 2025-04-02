@@ -44,7 +44,7 @@ Feel free to explore my work, connect with me, and learn more about my journey i
 ## 📞 Contact  
 Feel free to reach out for collaboration, inquiries, or just to say hello!  
 
-- **👤 Name:** Roman Gero Arrotyo  
+- **👤 Name:** Roman Gero Arroyo  
 - **📧 Email:** [geroarroyo2233@email.com](mailto:geroarroyo2233@email.com)  
 - **💼 LinkedIn:** [Connect with me](#)  
 - **🌐 Portfolio:** [My Website](#)  
