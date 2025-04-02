@@ -1,7 +1,7 @@
 # Roman Gero Arrotyo - Portfolio  
 
 Welcome to my personal portfolio website! 🎨🚀  
-This project highlights my skills, projects, and experience as a **second-year IT student** at **STI Alaminos, Pangasinan**. It serves as a platform to showcase my passion for **web development, software solutions, and innovative technology**.  
+This project highlights my skills, projects, and experience as a **second-year IT student** at **STI Alaminos, Pangasinan**
 
 Feel free to explore my work, connect with me, and learn more about my journey in the world of **Information Technology**!  
 
