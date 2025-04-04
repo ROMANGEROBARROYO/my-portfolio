@@ -34,12 +34,6 @@ Feel free to explore my work, connect with me, and learn more about my journey i
 │── 📄 README.md       # Project documentation
 ```
 
-## 📌 Setup Instructions
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/ROMANGEROARROYO/my-portfolio.git
-   ```
-2. Open the project folder and launch `index.html` in a browser.
 
 ## 📞 Contact  
 Feel free to reach out for collaboration, inquiries, or just to say hello!  
