@@ -733,5 +733,11 @@ body.dark
   color: #333; /* Optional: Change text color on hover */
   transform: scale(1.05); /* Slight scale for interaction */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-  cursor: pointer; /* Change cursor to pointer */
+  cursor: pointer; /* Change cursor to the  pointer */
+}
+.newletter-form button:before::after {
+
+background-color: #fff;
+width:
+
 }
