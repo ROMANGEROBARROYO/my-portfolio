@@ -1,150 +1,254 @@
 *  { 
-  margin: 0;
-  padding: 0;
-  font-family: 'poppins ', Sans-Serif;
-  box-sizing: border-box;
-} 
-body { 
-background: #080808;
-color: #fff;
-} 
-#Header { 
- width: 100%;
- height: 100vh;
- background-image: url(images/background.png);
- background-size: covor;
- background-position: center;
- 
-}
-.container { 
-  padding:  10px 10% ;
- 
-}
-nav  {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins ', Sans-Serif;
+    box-sizing: border-box;
+  } 
+  body { 
+  background: #080808;
+  color: #fff;
+  } 
+  #Header { 
+   width: 100%;
+   height: 100vh;
+   background-image: url(istockphoto-1137934013-612x612.jpg);
+   background-size: covor;
+   background-position: center;
+   
+  }
+  .container { 
+    padding:  10px 10% ;
+   
+  }
+  nav  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+  }
+  .logo { 
+   width: 140px;
+    
+    
+  }
+  nav ul li  { 
+   display: inline-block; 
+   list-style: none;
+   margin: 10px 20px;
+   
+  }
+  nav ul li a { 
+   color: #fff; 
+   text-decoration: none;
+   font-size: 18px;
+   position: relative;
+   
+  }
+  nav ul li a::after  {
+   contain: '';
+   height: 3px;
+   background: #ff004f;
+   position: absolute;
+   left: 0;
+   bottom: -6px;
+   transition: 0.5s;
   
-}
-.logo { 
- width: 140px;
+  }
+  nav ul li a:hover::after { 
+  width: 100%;
+    
+  }
   
+  .header-text  { 
+   margin-top: 20px;
+   font-size: 30px;
+  }
+  .header-text h1  {
+    
+    font-size: 60px;
+    margin-top: 20px;
+  }
+  .header-text h1  span  {
+    color: #ff004f;
+  }
   
-}
-nav ul li  { 
- display: inline-block; 
- list-style: none;
- margin: 10px 20px;
- 
-}
-nav ul li a { 
- color: #fff; 
- text-decoration: none;
- font-size: 18px;
- position: relative;
- 
-}
-nav ul li a::after  {
- contain: '';
- height: 3px;
- background: #ff004f;
- position: absolute;
- left: 0;
- bottom: -6px;
- transition: 0.5s;
-
-}
-nav ul li a:hover::after { 
-width: 100%;
-  
-}
-
-.header-text  { 
- margin-top: 20px;
- font-size: 30px;
-}
-.header-text h1  {
-  
+  #about  {
+    padding: 80px 0 ;
+    color: #ababab;
+    
+  }
+  .row {
+    display: flex;
+    justify-content: space-between ;
+    flex-wrap: wrap;
+    
+  }
+  .about-col-1 { 
+    flex-basis: 35%;
+  }
+  .about-col-1 img 
+  {
+   width: 100%;
+   border-radius: 15px; 
+   
+  }
+  .about-col-2 {
+     flex-basis: 60%;
+  }
+  .sub-title { 
   font-size: 60px;
-  margin-top: 20px;
-}
-.header-text h1  span  {
-  color: #ff004f;
-}
+  font-weight: 600;
+  color: #fff;
+  
+    
+  }
+  .tab-titles {
+    display: flex;
+    margin: 20px 0 40px ;
+    
+  }
+  .tab-Links { 
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    
+    
+  }
+  .tab-Links:after {
+  contain: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+    transition: 0.5s;
+    
+  }  
+  .active-Links::after {
+   width: 50%;
+   
+  }
+  .tab-contents ui li { 
+  list-style: none;
+  margin: 10px 0 ;
+  }
+  .tab-contents ui li span{
+    color: #b54769;
+    font-size: 14px;
+  }
+  .tab-contents {
+  display: none;
+    
+  }
+  .tab-contents.active-tabs { 
+  display: block;
+    
+  }
+  /* Contact Section */
+  #contact {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
 
-#about  {
-  padding: 80px 0 ;
-  color: #ababab;
-  
-}
-.row {
-  display: flex;
-  justify-content: space-between ;
-  flex-wrap: wrap;
-  
-}
-.about-col-1 { 
-  flex-basis: 35%;
-}
-.about-col-1 img 
-{
- width: 100%;
- border-radius: 15px; 
- 
-}
-.about-col-2 {
-   flex-basis: 60%;
-}
-.sub-title { 
-font-size: 60px;
-font-weight: 600;
-color: #fff;
+  .contact-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
 
+  .contact-col {
+    flex-basis: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .contact-col i {
+    font-size: 2em;
+    color: #ffc107;
+    margin-bottom: 10px;
+  }
+
+  .contact-col h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  .contact-col p {
+    font-size: 1em;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .btn:hover {
+    background-color: #e0a800;
+  }
+
+  /* Social Media Section */
+  #social-media {
+    background-color: black;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .social-icons a {
+    color: #fff;
+    font-size: 2em;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .social-icons a:hover {
+    color: #ffc107;
+  }
+
+ /* Footer Styles */
+#footer {
+    background: #080808; /* Match body background */
+    color: #ababab;
+    text-align: center;
+    padding: 20px 0; /* Increased padding for better spacing */
+    font-size: 0.9em;
+  }
   
-}
-.tab-titles {
-  display: flex;
-  margin: 20px 0 40px ;
+  #footer .container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+  }
   
-}
-.tab-Links { 
-  margin-right: 50px;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  position: relative;
+  #footer p {
+    margin: 5px 0; /* Add some vertical spacing between paragraphs */
+  }
   
+  #footer .social-icons {
+    margin-top: 10px; /* Add spacing above the icons */
+  }
   
-}
-.tab-Links:after {
-contain: '';
-width: 0;
-height: 3px;
-background: #ff004f;
-position: absolute;
-left: 0;
-bottom: -8px;
-  transition: 0.5s;
+  #footer .social-icons a {
+    color: #ababab;
+    font-size: 1.5em; /* Slightly smaller icons in the footer */
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
   
-}  
-.active-Links::after {
- width: 50%;
- 
-}
-.tab-contents ui li { 
-list-style: none;
-margin: 10px 0 ;
-}
-.tab-contents ui li span{
-  color: #b54769;
-  font-size: 14px;
-}
-.tab-contents {
-display: none;
-  
-}
-.tab-contents.active-tabs { 
-display: block;
-  
-}
+  #footer .social-icons a:hover {
+    color: #ff004f; /* Match your theme color */
+  }
