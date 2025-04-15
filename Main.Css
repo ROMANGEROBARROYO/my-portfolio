@@ -148,41 +148,52 @@ display: none;
 display: block;
   
 }
-/* Contact Section */
 #contact {
   padding: 50px 0;
-  background-color: #f9f9f9;
-  text-align: center;
 }
 
 .contact-row {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  margin-top: 30px;
   flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .contact-col {
-  flex-basis: 30%;
+  flex: 1 1 30%;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
   text-align: center;
-  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-col i {
-  font-size: 2em;
-  color: #ffc107;
+  color: #0077ff;
   margin-bottom: 10px;
 }
 
-.contact-col h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
+.contact-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.contact-col p {
-  font-size: 1em;
+.contact-col .btn {
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #0077ff;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
 }
+
+.contact-col .btn:hover {
+  background-color: #005fcc;
+}
+
 
 .btn {
   display: inline-block;
@@ -220,35 +231,31 @@ display: block;
 
 /* Footer Styles */
 #footer {
-  background: #080808; /* Match body background */
-  color: #ababab;
+  background-color: #111;
+  color: #fff;
+  padding: 20px 0;
   text-align: center;
-  padding: 20px 0; /* Increased padding for better spacing */
-  font-size: 0.9em;
 }
 
-#footer .container {
+.footer-content {
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  align-items: center; /* Center items horizontally */
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-#footer p {
-  margin: 5px 0; /* Add some vertical spacing between paragraphs */
+.footer-content p {
+  margin: 0;
+  font-size: 14px;
 }
 
-#footer .social-icons {
-  margin-top: 10px; /* Add spacing above the icons */
-}
-
-#footer .social-icons a {
-  color: #ababab;
-  font-size: 1.5em; /* Slightly smaller icons in the footer */
+.social-icons a {
   margin: 0 10px;
-  text-decoration: none;
-  transition: color 0.3s;
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s ease;
 }
 
-#footer .social-icons a:hover {
-  color: #ff004f; /* Match your theme color */
+.social-icons a:hover {
+  color: #0077ff;
 }
