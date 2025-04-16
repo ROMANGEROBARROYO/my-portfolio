@@ -9,10 +9,7 @@
     <link rel="stylesheet" href="portfolio.php">
   </head>
 
-  <!-- 🌙 Dark Mode Toggle Button -->
-<button id="darkModeToggle" class="btn" style="position: fixed; top: 15px; right: 20px; z-index: 1000;">
-  <span id="darkModeIcon">🌙</span> Toggle Dark Mode
-</button>
+
 
   <body>
     
@@ -57,12 +54,12 @@
            </div>
            <div class="about-col-1"> 
            <h1 class=" sub-title"> About me </h1>
-           <p>Hello! I'm Roman Gero B. Arroyo, a second-year Information Technology student at <strong>STI Alaminos</strong>. Welcome to my portfolio project.</p>
+           <p>Hello! I'm Roman Gero B. Arroyo, a second-year Information Technology student at <strong>STI Alaminos</strong>. and this is my portfolio </p>
 
           <!-- Tab Titles -->
 <div class="tab-titles">
   <p class="tab-Links active-Links" onclick="opentab('Skills', this)">Skills</p>
-  <p class="tab-Links" onclick="opentab('Experience', this)">Experience</p>
+  <p class="tab-Links" onclick="opentab('Awards', this)">Awards</p>
   <p class="tab-Links" onclick="opentab('Education', this)">Education</p>
 </div>
 
@@ -97,29 +94,49 @@
 
 
 <!-- Experience Tab Content -->
-<div class="tab-contents" id="Experience">
-  <h2>Experience Background</h2>
+<div class="tab-contents" id="Awards">
+  <h2>Awards</h2>
   <ul>
-    <li>
-      <strong>2023 – Present:</strong><br>
-      <em>IT Student Projects</em><br>
-      Created several personal and school-based projects using HTML, CSS, and JavaScript. These projects were aimed at improving web development skills, including responsive design and interactive features.<br>
-      <a href="project-link1.html" target="_blank">View Projects</a> <!-- Add link to specific projects -->
-    </li>
-    <li>
-      <strong>2023 – 2024:</strong><br>
-      <em>Multimedia Editor – School Events</em><br>
-      Edited videos and graphics for school presentations and club activities using Photoshop and video editing software. Developed promotional materials for events and assisted in editing visual content.<br>
-      <a href="portfolio-link2.html" target="_blank">See My Work</a> <!-- Add link to relevant media or samples -->
-    </li>
+
+
     <li>
       <strong>2022 – 2023:</strong><br>
-      <em>Leadership Role – ICT Club Member</em><br>
-      Actively participated in the school tech club, assisting with technical setup, organizing workshops, and providing technical support during events.<br>
-      <a href="club-project-link3.html" target="_blank">Explore My Involvement</a> <!-- Link to club events or workshops -->
+      <em>Ministry of altar server mabini  – Pob mabini Pangasinan</em><br>
+      Most plan tree award Most trust worthy<br>
+     
+    </li> 
+
+    <li>
+      <strong>2022 – 2023:</strong><br>
+      <em>Ministry of altar server mabini  – Pob mabini Pangasinan</em><br>
+       Ministry of altar server mabini 2020<br>
+     
     </li>
+
+
+    <li>
+      <strong>2022 – 2023:</strong><br>
+      <em>Trustworthy  award –  Mabini  central school </em><br>
+      Mabini  central school 2010 Most Trustworthy  award<br>
+     
+    </li>
+    <li>
+      <strong>2008 – 2009:</strong><br>
+      <em>Municipal social welfare development –  Mabini  central school </em><br>
+      Municipal social welfare development Most friendly Top 3<br>
+     
+    </li>
+    <li>
+      <strong>2008 – 2009:</strong><br>
+      <em>Ecclesiastical  District of pangasinan West  – Sto Niño Learning Center </em><br>
+      Ecclesiastical  District of pangasinan West 2009<br>
+      
+    </li>
+    
   </ul>
 </div>
+
+
 
 
 
@@ -131,19 +148,37 @@
   <ul class="education-list">
     <li class="education-item">
       <i class="fas fa-graduation-cap"></i>
-      <strong>Grade 6:</strong> Graduated from <em>Sto. Niño Learning Center</em>
+      <h3>Primary </h3>
+      <p><strong>    Mabini  Central School - </strong>  <em>Poblacion Mabini Pangasinan</em></p>
+      <p>   Grade 1 to 3</p>
+  
+      <p> <strong> Sto Niño Learning Center - </strong> <em>Poblacion Mabini Pangasinan</em> </p>
+      <p>Grade 4 to 6</p>
+
     </li>
+
     <li class="education-item">
       <i class="fas fa-graduation-cap"></i>
-      <strong>Grade 11:</strong> Completed with Honors – <em>Senior High School</em>
+      <h3>Secondary </h3>
+      <p><strong>  River View High Scool  - </strong> <em>Poblacion Mabini Pangasinan</em> </p>
+      <p>  Grade 7 to 9</p>
+  
+      <p> <strong> Malanday National High School - </strong>  <em> Marikina City  </em></p>
+      <p>Grade 10 to 11</p>
+
+      <p> <strong> River View High Scool - </strong>  <em>Poblacion Mabini Pangasinan</em> </p>
+      <p>Grade 12 </p>
+
     </li>
+    
+    
     <li class="education-item">
       <i class="fas fa-graduation-cap"></i>
-      <strong>Grade 12:</strong> Graduated from <em>River View High School</em>
-    </li>
-    <li class="education-item">
-      <i class="fas fa-graduation-cap"></i>
-      <strong>College (Present):</strong> 2nd Year IT Student at <em>STI College Alaminos</em>
+      <h3>  College </h3>
+      <p> <strong> Present </strong> </p>
+      <p><strong>  STI Alaminos  - </strong> <em>Alaminos City Pangasinan</em> </p>
+      
+
     </li>
   </ul>
 </div>
@@ -153,31 +188,48 @@
     </div>
 
 
+
+    <script>
+      function opentab(tabName, element) {
+        const tabLinks = document.querySelectorAll(".tab-Links");
+        const tabContents = document.querySelectorAll(".tab-contents");
+    
+        tabLinks.forEach(link => link.classList.remove("active-Link"));
+        tabContents.forEach(tab => tab.classList.remove("active-tab"));
+    
+        element.classList.add("active-Link");
+        document.getElementById(tabName).classList.add("active-tab");
+      }
+    </script>
+
+
   <!-- Portfolio Section -->
 <div id="portfolio">
   <div class="container">
-      <h1 class="sub-title">My Portfolio</h1>
+      <h1 class="sub-title"> portfolio </h1>
       <div class="portfolio-gallery">
           <div class="portfolio-item">
+
+
               <a href="project1-large.jpg" data-lightbox="portfolio">
-                  <img src="project1.jpg" alt="Project 1">
+                  <img src="received_1472954167425035.jpeg" alt="pixel artworks">
               </a>
-              <h3>Project Title 1</h3>
-              <p>A short description of the project.</p>
+              <h3>pixel artworks</h3>
+              <p> i made this from canva </p>
           </div>
           <div class="portfolio-item">
               <a href="project2-large.jpg" data-lightbox="portfolio">
-                  <img src="project2.jpg" alt="Project 2">
+                  <img src="9c41049f-2f93-4260-b339-3a9fdf3d0435.jfif" alt="Pictures"  >
               </a>
-              <h3>Project Title 2</h3>
-              <p>A short description of the project.</p>
+              <h3>Pictures</h3>
+              <p>  pcitures from my gallery</p>
           </div>
           <div class="portfolio-item">
               <a href="project3-large.jpg" data-lightbox="portfolio">
-                  <img src="project3.jpg" alt="Project 3">
+                  <img src="1739462089516.jpg" alt="Artworks">
               </a>
-              <h3>Project Title 3</h3>
-              <p>A short description of the project.</p>
+              <h3>Artworks</h3>
+              <p>artwork from 2019 to 2023</p>
           </div>
       </div>
   </div>
@@ -187,12 +239,12 @@
 <div id="contact">
   <div class="container">
     <h1 class="sub-title">Get In Touch</h1>
-    <p>I’d love to connect! Feel free to reach out through any of the channels below.</p>
+    
 
     <!-- Contact Form -->
     <form action="#" method="post" class="contact-form">
       <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <input type="text" id="name" name="name" placeholder= "Your Name" required>
 
       <label for="email">Your Email</label>
       <input type="email" id="email" name="email" placeholder="Your Email" required>
@@ -201,7 +253,14 @@
       <textarea id="message" name="message" placeholder="Your Message" required></textarea>
 
       <button type="submit" class="btn">Send Message</button>
+    
     </form>
+    <p class="connect-text">
+      I’d love to connect! Feel free <span>to reach out through any of the channels below.</span>
+    </p>
+    
+
+  
   </div>
 </div>
 
@@ -224,87 +283,92 @@
     </a>
   </div>
 
-  <!-- Phone Column -->
-  <div class="contact-col">
-    <i class="fas fa-phone fa-2x"></i>
-    <h2>Phone</h2>
-    <p>
-      <a href="tel:+639665346667" class="contact-link" aria-label="Call +63 966 534 6667">
-        +63 966 534 6667
-      </a>
-    </p>
-    <a href="tel:+639665346667" class="btn" aria-label="Call Me">Call Me</a>
-    <a href="https://wa.me/639665346667" target="_blank" class="btn" aria-label="Message on WhatsApp" style="margin-top: 10px;">
-      Message on WhatsApp
+<!-- Phone Column -->
+<div class="contact-col">
+  <i class="fas fa-phone fa-2x" aria-hidden="true"></i>
+  <h2>Phone</h2>
+  <p>
+    <a href="tel:+639665346667" class="contact-link" aria-label="Call +63 966 534 6667">
+      +63 966 534 6667
     </a>
-  </div>
+  </p>
 
-  <!-- Location Column -->
-  <div class="contact-col">
-    <i class="fas fa-map-marker-alt fa-2x"></i>
-    <h2>Location</h2>
-    <p>
-      Poblacion, Mabini, Pangasinan<br>
-      Region I - Ilocos Region<br>
-      Zip Code: 2409<br>
-      Philippines
-    </p>
-    <a href="https://www.google.com/maps/place/Poblacion,+Mabini,+Pangasinan" target="_blank" class="btn" aria-label="View on Google Maps">
-      View on Map
+  <div class="btn-group">
+    <a href="tel:+639665346667" class="btn" aria-label="Call Me Now">
+      📞 Call Me
+    </a>
+    <a href="https://wa.me/639665346667" target="_blank" class="btn" aria-label="Send a WhatsApp Message">
+      💬 Message on WhatsApp
     </a>
   </div>
 </div>
 
+<!-- Location Column -->
+<div class="contact-col">
+  <i class="fas fa-map-marker-alt fa-2x" aria-hidden="true"></i>
+  <h2>My Location</h2>
+  <address>
+    <p>
+      <strong>Poblacion, Mabini</strong><br>
+      Pangasinan, Region I – Ilocos Region<br>
+      Zip Code: 2409<br>
+      Philippines
+    </p>
+  </address>
+  <a href="https://www.google.com/maps/place/Poblacion,+Mabini,+Pangasinan" 
+     target="_blank" 
+     class="btn" 
+     aria-label="Open Poblacion Mabini in Google Maps">
+    📍 View on Google Maps
+  </a>
+</div>
+
+<!-- Add this in your <head> to load Font Awesome -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
 
 <!-- Social Media Section -->
-<div id="social-media">
+<section id="social-media">
   <div class="container">
-    
     <h2>Follow Me</h2>
-
     <p>Stay connected with me on social media:</p>
+
     <div class="social-icons">
-      <a href="https://facebook.com/yourprofile" target="_blank" class="social-icon" aria-label="Facebook">
+      <a href="https://facebook.com/gero.arroyo.5" target="_blank" class="social-icon" aria-label="Facebook Profile">
         <i class="fab fa-facebook-f"></i>
       </a>
-      <a href="https://instagram.com/yourprofile" target="_blank" class="social-icon" aria-label="Instagram">
+      <a href="https://instagram.com/geroarroyo" target="_blank" class="social-icon" aria-label="Instagram Profile">
         <i class="fab fa-instagram"></i>
       </a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-icon" aria-label="LinkedIn">
+      <a href="https://linkedin.com/in/geroarroyo" target="_blank" class="social-icon" aria-label="LinkedIn Profile">
         <i class="fab fa-linkedin-in"></i>
       </a>
-      <a href="https://github.com/yourusername" target="_blank" class="social-icon" aria-label="GitHub">
+      <a href="https://github.com/geroarroyo2233" target="_blank" class="social-icon" aria-label="GitHub Profile">
         <i class="fab fa-github"></i>
       </a>
     </div>
   </div>
-</div>
-
-
+</section>
 
 
 <!-- Footer -->
 <div id="footer">
   <div class="container">
     <p>&copy; 2025 | Roman Gero Arroyo | All Rights Reserved</p>
-    
-    <div class="social-icons">
-      <a href="https://facebook.com/yourprofile" target="_blank" aria-label="Facebook Profile">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://instagram.com/yourprofile" target="_blank" aria-label="Instagram Profile">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn Profile">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-      <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub Profile">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top-btn" aria-label="Back to top">
+      <span>Back to Top</span> ⬆️
+    </button>
   </div>
 </div>
 
-
+   <!-- Back to Top Button -->
+   <button id="backToTop" class="back-to-top-btn" aria-label="Back to top">
+    <span>Back to Top</span> ⬆️
+  </button>
+  
+</div>
   </body>
 </html>
