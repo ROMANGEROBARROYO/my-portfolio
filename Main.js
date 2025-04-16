@@ -1,35 +1,8 @@
-// 🌙 Dark Mode Toggle Functionality
-const toggleButton = document.getElementById('darkModeToggle');
-const body = document.body;
-const darkModeIcon = document.getElementById('darkModeIcon');
-
-// Load from localStorage
-if (localStorage.getItem('dark-mode') === 'enabled') {
-  body.classList.add('dark-mode');
-  darkModeIcon.textContent = '☀️'; // Change icon to sun for light mode
-}
-
-// Event listener for the button click
-toggleButton.addEventListener('click', () => {
-  body.classList.toggle('dark-mode');
-
-  // Toggle icon
-  if (body.classList.contains('dark-mode')) {
-    localStorage.setItem('dark-mode', 'enabled');
-    darkModeIcon.textContent = '☀️'; // Change icon to sun for light mode
-  } else {
-    localStorage.setItem('dark-mode', 'disabled');
-    darkModeIcon.textContent = '🌙'; // Change icon to moon for dark mode
-  }
-});
-
-
-
-// Script to add the 'active' class to the current section in the navigation menu
 const navLinks = document.querySelectorAll('.nav-link');
 const sections = document.querySelectorAll('section');
 
-window.addEventListener('scroll', () => {
+// Function to handle scroll-based active state
+const handleScroll = () => {
   let currentSection = '';
   
   sections.forEach(section => {
@@ -47,7 +20,17 @@ window.addEventListener('scroll', () => {
       link.classList.add('active');
     }
   });
+};
+
+// Listen to scroll events with some debounce/throttle for performance
+let timeout;
+window.addEventListener('scroll', () => {
+  clearTimeout(timeout);
+  timeout = setTimeout(handleScroll, 50);
 });
+
+// Initialize active state on page load
+handleScroll();
 
 
 
@@ -71,12 +54,41 @@ document.querySelector(".contact-form").addEventListener("submit", function (e) 
 const tabLinks = document.querySelectorAll('.tab-Links');
 const tabContents = document.querySelectorAll('.tab-contents');
 
+// Add event listener for each tab
 tabLinks.forEach((link, index) => {
   link.addEventListener('click', () => {
+    // Remove active class from all tabs and contents
     tabLinks.forEach(item => item.classList.remove('active-Link'));
     tabContents.forEach(content => content.classList.remove('active-tab'));
 
+    // Add active class to clicked tab and its content
     link.classList.add('active-Link');
     tabContents[index].classList.add('active-tab');
+  });
+});
+
+// Set default active tab on page load
+document.addEventListener('DOMContentLoaded', () => {
+  tabLinks[0].classList.add('active-Link');
+  tabContents[0].classList.add('active-tab');
+});
+
+// Get the button element
+const backToTopBtn = document.getElementById('backToTop');
+
+// Show the button when the user scrolls down
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 200) { // Show button after scrolling 200px
+    backToTopBtn.style.display = 'block';
+  } else {
+    backToTopBtn.style.display = 'none';
+  }
+});
+
+// Scroll to the top when the button is clicked
+backToTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // Smooth scroll to the top
   });
 });
