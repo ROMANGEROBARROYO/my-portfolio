@@ -58,7 +58,7 @@
   #Header { 
    width: 100%;
    height: 100vh;
-   background-image: url(1217008.jpg);
+   background-image: url(0611b5b1-4e3a-4e69-96d7-449d1287cf5c.jpg);
    background-size: covor;
    background-position: center;
    
@@ -180,6 +180,7 @@
      flex-basis: 60%;
   }
   .sub-title { 
+    text-align: center;
   font-size: 60px;
   font-weight: 600;
   color: #fff;
@@ -272,80 +273,81 @@
     padding: 50px 0;
   }
   
-  /* General Styles for Contact Form */
+ /* General Styles for Contact Form */
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Modified to stretch items horizontally */
+  max-width: 600px;
+  margin: 20px auto; /* Added top margin for spacing */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    font-size: 16px;
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #333; /* Added text color for better readability */
 }
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
+  width: 100%; /* Ensures full width within the container */
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #0056b3;
-    outline: none;
+  border-color: #0056b3;
+  outline: none;
 }
 
 .contact-form button {
-    background-color: #0056b3;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  background-color: #0056b3;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-end; /* Moved button alignment here */
 }
 
 .contact-form button:hover {
-    background-color: #004085;
+  background-color: #004085;
 }
 
 .contact-form button:active {
-    transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .contact-form textarea {
-    resize: vertical;
-    min-height: 150px;
+  resize: vertical;
+  min-height: 150px;
 }
 
-.contact-form .btn {
-    align-self: flex-end;
+/* Removed the .contact-form .btn rule as the button style is now directly under .contact-form button */
+
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
 }
-    .btn {
-        display: inline-block;
-        background-color: #007bff;
-        color: white;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 5px;
-        text-align: center;
-        transition: background-color 0.3s ease;
-    }
     
     .btn:hover {
         background-color: #0056b3;
@@ -641,46 +643,59 @@
     margin-bottom: 10px;
   }
   
-  #social-media p {
-    font-size: 18px;
-    color: #777;
-    margin-bottom: 30px;
-  }
-  
-  /* Social Media Icons Container */
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  /* Individual Social Media Icon Styling */
-  .social-icon {
-    display: inline-block;
-    font-size: 30px;
-    color: #333;
-    background-color: #fff;
-    border-radius: 50%;
-    padding: 15px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    text-decoration: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .social-icon:hover {
-    transform: scale(1.1);
-    background-color: #ff004f; /* Highlight color on hover */
-    color: white;
-  }
-  
-  .social-icon i {
-    transition: color 0.3s ease;
-  }
-  
-  /* Hover Effects */
-  .social-icon:hover i {
-    color: #fff;
-  }
+/* Social Media Section Styles */
+#social-media {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 50px 0; /* Top and bottom padding */
+  text-align: center; /* Center align text within the section */
+}
+
+#social-media h2 {
+  font-size: 36px; /* Large heading text */
+  color: #333; /* Dark gray heading color */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+#social-media p {
+  font-size: 18px; /* Slightly smaller paragraph text */
+  color: #777; /* Medium gray paragraph color */
+  margin-bottom: 30px; /* Space below the paragraph */
+}
+
+/* Social Media Icons Container */
+.social-icons {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center icons horizontally */
+  gap: 20px; /* Space between icons */
+}
+
+/* Individual Social Media Icon Styling */
+.social-icon {
+  display: inline-block; /* Allows setting width and height, keeps inline flow */
+  font-size: 30px; /* Size of the social media icon */
+  color: #333; /* Default icon color */
+  background-color: #fff; /* White background for the circle */
+  border-radius: 50%; /* Creates a circular shape */
+  padding: 15px; /* Space inside the circle */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effects */
+  text-decoration: none; /* Remove underlines from links */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+  background-color: #ff004f; /* Highlight color on hover (red-pink) */
+  color: white; /* White icon color on hover */
+}
+
+.social-icon i {
+  transition: color 0.3s ease; /* Smooth transition for the icon color */
+}
+
+/* Hover Effects */
+.social-icon:hover i {
+  color: #fff; /* Ensure icon color is white on hover */
+}
 
   .btn-group {
     display: flex;
