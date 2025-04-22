@@ -6,7 +6,7 @@
     <title>portfolio | roman gero arroyo</title>
     
     <link rel="stylesheet" href="Portfolio.css"  />
-    <link rel="stylesheet" href="portfolio.php">
+ 
   </head>
 
 
@@ -369,16 +369,16 @@
     <p>Stay connected with me on social media:</p>
 
     <div class="social-icons">
-      <a href="https://facebook.com/gero.arroyo.5" target="_blank" class="social-icon" aria-label="Facebook Profile">
+      <a href="https://www.facebook.com/profile.php?id=61553432610431&sk=about" target="_blank" class="social-icon" aria-label="Facebook Profile">
           <i class="fab fa-facebook-f"></i>
       </a>
-      <a href="https://instagram.com/geroarroyo" target="_blank" class="social-icon" aria-label="Instagram Profile">
+      <a href="https://www.instagram.com/romangeroarroyo?igsh=NTV1dWRyMHFyb3By" target="_blank" class="social-icon" aria-label="Instagram Profile">
           <i class="fab fa-instagram"></i>
       </a>
-      <a href="https://linkedin.com/in/geroarroyo" target="_blank" class="social-icon" aria-label="LinkedIn Profile">
+      <a href="https://www.linkedin.com/in/roman-gero-b-arroyo-28b7b8307/" target="_blank" class="social-icon" aria-label="LinkedIn Profile">
           <i class="fab fa-linkedin-in"></i>
       </a>  
-      <a href="https://github.com/geroarroyo2233" target="_blank" class="social-icon" aria-label="GitHub Profile">
+      <a href="https://github.com/ROMANGEROBARROYO" target="_blank" class="social-icon" aria-label="GitHub Profile">
           <i class="fab fa-github"></i>
       </a>
   </div>
@@ -440,71 +440,109 @@
 
 
     
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top-btn" aria-label="Back to top">
-      <span>Back to Top</span> ⬆️
-    </button>
-  </div>
-</div>
-
+  <!-- Back to Top Button -->
 <button id="backToTop" class="back-to-top-btn" aria-label="Back to top">
-  <span>Back to Top</span> ⬆️
+  <span class="back-to-top-text">Back to Top</span> 
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="back-to-top-icon">
+      <path d="M12 19V6M5 13l7-7 7 7"/>
+  </svg>
 </button>
 
+
+
 <style>
-  /* Basic styling for the Back to Top button */
-  .back-to-top-btn {
-      display: none; /* Hidden by default */
-      position: fixed; /* Fixed position relative to the viewport */
-      bottom: 20px;
-      right: 20px;
-      z-index: 99; /* Ensure it's on top of other elements */
-      border: none;
-      outline: none;
-      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-      color: white;
-      cursor: pointer;
-      padding: 10px 15px;
-      border-radius: 5px;
-      font-size: 16px;
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
-  }
+ /* Basic styling for the Back to Top button */
+.back-to-top-btn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position relative to the viewport */
+    bottom: 20px;
+    right: 20px;
+    z-index: 99; /* Ensure it's on top of other elements */
+    border: none;
+    outline: none;
+    background-color: rgba(30, 30, 30, 0.8); /* Dark background */
+    color: #ddd; /* Light text color */
+    cursor: pointer;
+    padding: 12px 20px; /* Slightly bigger padding */
+    border-radius: 50%; /* Circular button */
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, scale 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Default shadow for visibility */
+}
 
-  .back-to-top-btn:hover {
-      background-color: rgba(0, 0, 0, 0.7);
-  }
+.back-to-top-btn:hover {
+    background-color: rgba(60, 60, 60, 0.9); /* Darker background on hover */
+    color: #fff; /* Lighter text on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); /* Larger shadow for hover */
+    transform: scale(1.1); /* Scale the button slightly on hover */
+}
 
-  .back-to-top-btn.show {
-      display: block;
-      opacity: 1;
-  }
+.back-to-top-btn.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0); /* Smooth transition for button appearance */
+}
 
-  .back-to-top-btn span {
-      margin-right: 5px;
-  }
+.back-to-top-text {
+    display: inline-block;
+    margin-right: 10px;
+    transition: opacity 0.3s ease; /* Fade out text smoothly */
+}
+
+.back-to-top-icon {
+    fill: #ddd;
+    transition: transform 0.3s ease;
+}
+
+.back-to-top-btn:hover .back-to-top-icon {
+    transform: translateY(-3px); /* Icon slightly moves up on hover */
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width: 600px) {
+    .back-to-top-btn {
+        font-size: 14px;
+        padding: 10px 15px; /* Adjust padding */
+    }
+
+    .back-to-top-text {
+        display: none; /* Hide text on smaller screens for space */
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .back-to-top-btn {
+        font-size: 12px;
+        padding: 8px 12px; /* Further reduce size on very small screens */
+    }
+}
+
 </style>
 
 <script>
-  // Get the button
-  let backToTopBtn = document.getElementById("backToTop");
+ // Get the button
+let backToTopBtn = document.getElementById("backToTop");
 
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function() {scrollFunction()};
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {
+    scrollFunction();
+};
 
-  function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          backToTopBtn.classList.add("show");
-      } else {
-          backToTopBtn.classList.remove("show");
-      }
-  }
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopBtn.classList.add("show");
+    } else {
+        backToTopBtn.classList.remove("show");
+    }
+}
 
-  // When the user clicks on the button, scroll to the top of the document
-  backToTopBtn.addEventListener("click", function() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  });
+// When the user clicks on the button, scroll to the top of the document
+backToTopBtn.addEventListener("click", function() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+});
+
 </script>
   
 </div>
