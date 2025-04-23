@@ -996,4 +996,21 @@
     transform: rotate(360deg);
   }
 }
- 
+.social-icon {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 32px;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #1da1f2; /* You can change this to match TikTok or GitHub branding */
+  transform: scale(1.2);
+}
+
+/* Optional: TikTok-specific color override */
+.social-icon[aria-label="TikTok Profile"]:hover {
+  color: #010101; /* TikTok's black color */
+}
